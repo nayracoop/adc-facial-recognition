@@ -8,6 +8,17 @@ p {
     color: #5d6884;
 }
 #working {
+    .what-is {
+        background: #242424;
+        h3, p {
+            color: #fff;
+        }
+        .working-desc {
+            h2, h3 {
+                text-align: center;
+            }
+        }
+    }
     .card {
         max-width: unset;
         border: none;

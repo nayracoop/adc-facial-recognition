@@ -4,7 +4,7 @@ import { Container, Row, Col, Jumbotron } from 'react-bootstrap'
 
 const Intro = () => {
   return (
-    <Jumbotron fluid className='intro'>
+    <Jumbotron fluid className='intro mb-0'>
       <Container fluid className='intro-container'>
         <Row>
           <Col xs={{ span: 9, offset: 2 }} sm={{ span: 9, offset: 2 }} lg={{ span: 5, offset: 3 }}>

@@ -17,9 +17,9 @@ const Header = (props) => {
               <Navbar.Toggle aria-controls='basic-navbar-nav' />
               <Navbar.Collapse id='basic-navbar-nav'>
                 <Nav className='ml-auto'>
-                  <Nav.Link href='#working'>Funcionamiento</Nav.Link>
-                  <Nav.Link href='#risks'>Riesgos</Nav.Link>
-                  <Nav.Link href='#about-adc'>¿Qué está haciendo ADC?</Nav.Link>
+                  <Nav.Link href='#working'>¿cómo funciona?</Nav.Link>
+                  <Nav.Link href='#risks'>riesgos</Nav.Link>
+                  <Nav.Link href='#about-adc'>¿qué está haciendo la ADC?</Nav.Link>
                 </Nav>
               </Navbar.Collapse>
             </Navbar>

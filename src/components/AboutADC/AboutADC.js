@@ -8,7 +8,7 @@ const AboutADC = () => {
       <Container fluid>
         <Row>
           <Col lg={{ span: 6, offset: 3 }} className='img-wrapper'>
-            <img src={require('../../assets/img/' + 'about-adc.jpg')} alt='' class='mb-4 w-100' />
+            <img src={require('../../assets/img/about-adc.jpg')} alt='' class='mb-4 w-100' />
           </Col>
           <Col lg={{ span: 6, offset: 3 }}>
             <h2 class='pt-5 pb-4'>¿Qué está haciendo ADC?</h2>

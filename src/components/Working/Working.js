@@ -8,16 +8,16 @@ import Nodos from '../../assets/img/nodos.svg'
 const Working = (props) => {
   return (
     <section id='working'>
-      <Container fluid>
-        <Row className='mb-5'>
+      <Container fluid className='what-is'>
+        <Row className='mb-5 working-desc'>
           <Col lg={{ span: 6, offset: 3 }}>
-            <h2 class='mb-3'>Funcionamiento</h2>
+            <h2 class='mb-3'>¿Cómo funciona?</h2>
           </Col>
-          <TextBlock title='¿Qué es?' headerClass='mb-4' text='El reconocimiento facial es una tecnología biométrica que permite reconocer e identificar a las personas mediante sus rasgos faciales. Si bien hay ciertas aplicaciones del reconocimiento facial que son útiles, esta tecnología ha ido ganando cada vez mayor popularidad como una herramienta de vigilancia y control por parte de diversos gobiernos. El uso indiscriminado y sin regulación está poniendo en grave riesgo el ejercicio y goce de nuestros derechos fundamentales, a la vez que se está redefiniendo cómo disfrutamos de los espacios públicos y desarrollamos nuestra vida en sociedad.' />
+          <TextBlock title='¿Qué es?' headerClass='mb-4' text='El reconocimiento facial es una tecnología biométrica que permite reconocer e identificar a las personas mediante sus rasgos faciales. Si bien hay ciertas aplicaciones del reconocimiento facial que son útiles, esta tecnología ha ido ganando cada vez mayor popularidad como una herramienta de vigilancia y control por parte de diversos gobiernos. El uso indiscriminado, sin una regulación apropiada y precisa está poniendo en grave riesgo el ejercicio y goce de nuestros derechos fundamentales, a la vez que se está redefiniendo cómo disfrutamos de los espacios públicos y desarrollamos nuestra vida en sociedad.' />
         </Row>
 
         <Row className='align-items-center mb-5'>
-          <Col lg={{ span: 3, offset: 1 }}>
+          <Col lg={4}>
             <img src={Nodos} class='w-100' alt='nodos' />
           </Col>
 
@@ -37,9 +37,16 @@ const Working = (props) => {
             image={'algoritmo.svg'}
             imageHeight='183'
             class='col-lg-6 offset-lg-3'
-            text='Podemos establecer dos grandes categorías de datos biométricos. Por un lado, los que provienen de las características físicas y fisiológicas. Tal es el caso de las huellas dactilares, los rasgos faciales, el ADN, el iris, la retina, la forma de una parte del cuerpo como la mano o la oreja, e incluso el mapa de nuestras venas. Por otra parte, los que provienen de características del comportamiento, como son la voz, la firma, el modo de andar o la manera de escribir en un teclado. Los datos biométricos son datos personales sensibles.' />
+            text='Podemos establecer dos grandes categorías de datos biométricos. Por un lado, los que provienen de las características físicas y fisiológicas. Tal es el caso de las huellas dactilares, los rasgos faciales, el ADN, el iris, la retina, la forma de una parte del cuerpo como la mano o la oreja, e incluso el mapa de nuestras venas. Por otra parte, los que provienen de características del comportamiento, como son la voz, la firma, el modo de andar o la manera de escribir en un teclado.' />
         </Row>
+        <Row className='mb-5'>
+          <Col lg={{ span: 6, offset: 3 }}>
+            <p>Los datos biométricos son datos personales sensibles.</p>
+          </Col>
+        </Row>
+      </Container>
 
+      <Container fluid>
         <Row className='mb-5'>
           <Col lg={{ span: 6, offset: 3 }}>
             <h3 class='pt-4 pb-4'>¿Cómo funciona la plantilla biométrica?</h3>
@@ -49,7 +56,7 @@ const Working = (props) => {
 
         <Row className='mb-5'>
           <Col lg={{ span: 6, offset: 3 }}>
-            <h3 class='pt-4 pb-4'>Cuál es la diferencia entre verificación =/= identificación?</h3>
+            <h3 class='pt-4 pb-4'>¿Cuál es la diferencia entre verificación e identificación?</h3>
           </Col>
           {props.textWithImage}
         </Row>

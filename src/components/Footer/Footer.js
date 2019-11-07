@@ -8,7 +8,7 @@ const Footer = () => {
       <Container fluid>
         <Row className='main-footer pt-4 pb-4'>
           <Col lg={{ span: 2, offset: 2 }}>
-            <img src={require('../../assets/img/' + 'logo-footer.svg')} height='63' alt='' />
+            <img src={require('../../assets/img/logo-footer.svg')} height='63' alt='' />
           </Col>
           <Col lg={{ span: 3, offset: 4 }}>
             <ul>
@@ -19,7 +19,7 @@ const Footer = () => {
         </Row>
         <Row className='sub-footer pt-2 pb-2'>
           <Col lg={{ span: 9, offset: 2 }}>
-            <img src={require('../../assets/img/' + 'licence.png')} height='25' alt='licence' />
+            <img src={require('../../assets/img/licence.png')} height='25' alt='licence' />
             <span class='ml-3'>ADC 2019</span>
           </Col>
         </Row>
