@@ -1,0 +1,30 @@
+.header-container {
+    z-index: 2;
+    header {
+        nav.navbar-light{
+            padding: 2.8rem 0;
+            .navbar-brand {                
+                @media (max-width: 768px) {
+                    img {
+                        height: 55px;
+                    }
+                }
+            }
+            .navbar-nav {
+                .nav-link {
+                    font-family: 'Work Sans', sans-serif;
+                    text-transform: uppercase;
+                    font-weight: 800;
+                    color: #3f485d;
+                    margin: 0 1rem;
+                    &:last-of-type {
+                        margin-right: 0;
+                    }
+                }
+            }
+            #basic-navbar-nav {
+                transition: none;
+            }
+        }
+    }
+}

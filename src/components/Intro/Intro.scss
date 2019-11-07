@@ -1,0 +1,34 @@
+.intro {
+    background-color: #FFF;
+    background-image: url('../../assets/img/intro-bg.svg');
+    background-repeat: no-repeat;
+    background-position: 100% 80px;
+    background-size: 100%;
+    height: 135vh;
+    @media (max-width: 768px) {
+        background-size: 104%;
+        height: 65vh;
+    }
+    .intro-container {
+        padding-top: 12%;
+        @media (max-width: 768px) {
+          font-size: 2em;
+          h1 {
+              font-size: 1.65em;
+          }
+          p {
+              font-size: 1em;
+          }
+        }
+    }    
+    h1 {
+        color: #FFF;
+        margin-bottom: 0;
+    }
+    p {
+        font-weight: 600;
+        font-size: 2.625em;
+        line-height: 1em;
+        color: #3f485d;
+    }
+}

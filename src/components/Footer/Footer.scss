@@ -1,0 +1,19 @@
+#footer {
+    .main-footer {
+        ul {
+            text-align: right;
+            margin-bottom: 0;
+            li {
+                color: #171c2b;
+                font-size: .875em;
+            }
+        }
+    }
+    .sub-footer {
+        background: #3f485d;
+        span {
+            color: #FFF;
+            font-weight: 600;
+        }
+    }
+}

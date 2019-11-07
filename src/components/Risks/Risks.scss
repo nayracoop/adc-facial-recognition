@@ -1,0 +1,36 @@
+#risks {
+    background-image: url('../../assets/img/risks-bg.svg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-bottom: 34em;
+
+    h2 {
+        text-align: center;
+        color: #3f485d;
+        padding-top: 11rem;
+    } 
+    .card {
+        background: #ededed;
+        border: 0;
+        margin-bottom: 1em;
+        color: #3f485d;
+        .card-img {
+            width: auto;
+            margin-bottom: .75em;
+        }
+        .card-text {
+            font-size: 1em;
+        }
+        
+        .card-body {
+            @media (max-width: 991px) {
+             display: flex;
+             align-items: center;
+             .card-text {
+                 margin-left: 1em;
+             }
+            }
+        }
+    }
+}
