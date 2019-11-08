@@ -5,7 +5,7 @@ const CardWithImage = (props) => {
     <div class={'card mb-4 w-100 ' + props.align}>
       <div class='row no-gutters'>
         <div class='col-lg-4'>
-          <img src={props.image} height={props.imageHeight} class='card-img' alt={props.imageAlt} />
+          <img src={props.image} height={props.imgHeight} class='card-img' alt={props.imgAlt} />
         </div>
         <div class='col-lg-7 offset-lg-1'>
           <div class='card-body'>

@@ -35,7 +35,7 @@ const Working = (props) => {
         <Row className='mb-5'>
           <TextWithImage
             image={'algoritmo.svg'}
-            imageHeight='183'
+            imgHeight='183'
             class='col-lg-6 offset-lg-3'
             text='Podemos establecer dos grandes categorías de datos biométricos. Por un lado, los que provienen de las características físicas y fisiológicas. Tal es el caso de las huellas dactilares, los rasgos faciales, el ADN, el iris, la retina, la forma de una parte del cuerpo como la mano o la oreja, e incluso el mapa de nuestras venas. Por otra parte, los que provienen de características del comportamiento, como son la voz, la firma, el modo de andar o la manera de escribir en un teclado.' />
         </Row>
