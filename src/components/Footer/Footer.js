@@ -8,19 +8,13 @@ const Footer = () => {
       <Container fluid>
         <Row className='main-footer pt-4 pb-4'>
           <Col lg={{ span: 2, offset: 2 }}>
-            <img src={require('../../assets/img/logo-footer.svg')} height='63' alt='' />
+            <img src={require('../../assets/img/logo-footer.svg')} height='64' alt='ADC por los derechos civiles' />
           </Col>
-          <Col lg={{ span: 3, offset: 4 }}>
+          <Col lg={{ span: 4, offset: 3 }}>
             <ul>
-              <li>Tucumán 924 8° (C1049AAT) Ciudad Autónoma de <br /> Buenos Aires - Argentina</li>
-              <li>Teléfono: (54 11) 5236-0555 | contacto@adc.org.ar</li>
+              <li>Tucumán 924 8° (C1049AAT) Ciudad Autónoma de Buenos Aires - Argentina</li>
+              <li>Teléfono: <a href='tel:+541152360555'>(54 11) 5236-0555</a> | <a href='mailto:contacto@adc.org.ar'>contacto@adc.org.ar</a></li>
             </ul>
-          </Col>
-        </Row>
-        <Row className='sub-footer pt-2 pb-2'>
-          <Col lg={{ span: 9, offset: 2 }}>
-            <img src={require('../../assets/img/licence.png')} height='25' alt='licence' />
-            <span class='ml-3'>ADC 2019</span>
           </Col>
         </Row>
       </Container>

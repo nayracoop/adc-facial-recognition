@@ -36,10 +36,8 @@ const Working = (props) => {
           <TextWithImage
             image={'algoritmo.svg'}
             imgHeight='183'
-            class='col-lg-6 offset-lg-3'
+            class='col-lg-6 offset-lg-3 algorithm'
             text='Podemos establecer dos grandes categorías de datos biométricos. Por un lado, los que provienen de las características físicas y fisiológicas. Tal es el caso de las huellas dactilares, los rasgos faciales, el ADN, el iris, la retina, la forma de una parte del cuerpo como la mano o la oreja, e incluso el mapa de nuestras venas. Por otra parte, los que provienen de características del comportamiento, como son la voz, la firma, el modo de andar o la manera de escribir en un teclado.' />
-        </Row>
-        <Row className='mb-5'>
           <Col lg={{ span: 6, offset: 3 }}>
             <p>Los datos biométricos son datos personales sensibles.</p>
           </Col>

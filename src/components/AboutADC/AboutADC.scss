@@ -1,6 +1,5 @@
 #about-adc {
-    background-color: #0087ff;
-    padding-bottom: 100px;
+    padding-bottom: 0;
     h2, p {
         color: #FFF;
     }
@@ -12,6 +11,35 @@
         line-height: 2.125rem;
     }
     .img-wrapper {
-        margin-top: -22em;
+        background-color: #FFF;
+        padding-top: 3.75em;
+        padding-bottom: 3.75em;
+        h3 {
+            font-size: .875em;
+            font-weight: 600;
+            color: #6a6a6a;
+            text-transform: uppercase;
+            margin-top: 3.375em;
+        }
+    }
+    .desc-wrapper {
+        background-color: #0087ff;
+        padding-top: 3.75em;
+        padding-bottom: 3.75em;
+        h3 {
+            font-size: 1.125em;
+            font-weight: 600;
+            color: #FFF;
+            text-transform: uppercase;
+            margin-top: 3.25em;
+        }
+        .adc-social {
+            .social-cont {
+            }
+        }
+        .adc-share {
+            .share-cont {
+            }
+        }
     }
 }

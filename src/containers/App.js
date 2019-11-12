@@ -8,6 +8,7 @@ import TextWithImage from '../components/Working/TextWithImage'
 import RisksCard from '../components/Risks/RisksCard'
 import Risks from '../components/Risks/Risks'
 import AboutADC from '../components/AboutADC/AboutADC'
+import SocialMedia from '../components/AboutADC/SocialMedia'
 import Footer from '../components/Footer/Footer'
 
 class App extends React.Component {
@@ -36,13 +37,28 @@ class App extends React.Component {
       { image: 'risks-icon.svg', imgHeight: '43', imgWidth: '43', imgAlt: 'icono riesgos', text: 'Facilita la vigilancia masiva en forma automatizada: los algoritmos de reconocimiento facial deben necesariamente detectar todas las caras que ven las cámaras en donde están implementados, por eso, por más que tu nombre no esté vinculado a tu rostro, el software igualmente te está reconociendo.', colClass: 'col-lg-4 offset-3' }
     ].map(e => { return <RisksCard image={e.image} imgHeight={e.imgHeight} imgWidth={e.imgWidth} imgAlt={e.imgAlt} text={e.text} colClass={e.colClass} /> })
 
+    const socialIconsContent = [
+      { image: 'social-fb.svg', imgAlt: 'facebook icon', imgHeight: '56', url: '#' },
+      { image: 'social-ig.svg', imgAlt: 'instagram icon', imgHeight: '56', url: '#' },
+      { image: 'social-link.svg', imgAlt: 'linkedin icon', imgHeight: '56', url: '#' },
+      { image: 'social-tw.svg', imgAlt: 'twitter icon', imgHeight: '56', url: '#' },
+      { image: 'social-yt.svg', imgAlt: 'youtube icon', imgHeight: '56', url: '#' }
+    ].map(e => { return <SocialMedia image={e.image} imgHeight={e.imgHeight} imgAlt={e.imgAlt} url={e.url} /> })
+
+    const shareIconsContent = [
+      { image: 'share-fb.svg', imgAlt: 'facebook icon', imgHeight: '40', url: '#' },
+      { image: 'share-tw.svg', imgAlt: 'twitter icon', imgHeight: '40', url: '#' },
+      { image: 'share-wsp.svg', imgAlt: 'whatsapp icon', imgHeight: '40', url: '#' },
+      { image: 'share-print.svg', imgAlt: 'printer icon', imgHeight: '40', url: '#' }
+    ].map(e => { return <SocialMedia image={e.image} imgHeight={e.imgHeight} imgAlt={e.imgAlt} url={e.url} /> })
+
     return (
       <div className='App'>
         <Header />
         <Intro />
         <Working cardsList={cardWithImageContent} textWithImage={TextWithImageContent} />
         <Risks riskCardsList={RisksCardContent} />
-        <AboutADC />
+        <AboutADC shareIcons={shareIconsContent} socialList={socialIconsContent} />
         <Footer />
       </div>
     )
