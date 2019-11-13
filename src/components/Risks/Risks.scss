@@ -15,6 +15,9 @@
         padding-top: 11rem;
         padding-bottom: 1em;
         margin-bottom: 0;
+        @media (max-width: 991px) {
+            padding-top: 8.875rem;
+        }
     } 
     .card {
         background: #242b36;
@@ -25,7 +28,7 @@
             width: auto;
             margin-bottom: .75em;
             position: absolute;
-            top: -21.5px;
+            top: -30.5px;
             margin-left: auto;
             left: 0;
             margin-right: auto;
@@ -41,6 +44,7 @@
             @media (max-width: 991px) {
              display: flex;
              align-items: center;
+             padding-top: 2.65rem;
              .card-text {
                  margin-left: 1em;
              }

@@ -5,11 +5,11 @@ import Logo from '../../assets/img/logo.svg'
 
 const Header = (props) => {
   return (
-    <Container fluid className='position-fixed header-container'>
+    <Container fluid className='header-container'>
       <Row>
         <Col lg={{ span: 10, offset: 1 }}>
           <header>
-            <Navbar expand='lg' fixed>
+            <Navbar expand='lg'>
               <Navbar.Brand href='#'>
                 <span class='sr-only'>ADC por los derechos civiles</span>
                 <img src={Logo} height='75' alt='ADC por los derechos civiles' />

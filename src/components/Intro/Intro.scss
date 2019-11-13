@@ -31,4 +31,17 @@
         line-height: 1em;
         color: #FFF;
     }
+    @media (max-width: 991px) {
+        background-image: none;
+        .intro-container {
+            text-align: center;
+            h1 {
+                font-size: 2.375rem;
+                color: #00b1eb;
+            }
+            p {
+                font-size: .875rem;
+            }
+        }
+    }
 }

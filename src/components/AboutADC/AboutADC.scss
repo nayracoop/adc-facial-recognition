@@ -5,10 +5,17 @@
     }
     h2 {
         margin-bottom: initial;
+        @media all and (max-width: 991px){
+            font-size: 2.375em;
+        }
     }
     p {
         font-size: 1.75em;
         line-height: 2.125rem;
+        @media all and (max-width: 991px){
+            font-size: 1em;
+            line-height: 1.375rem;
+        }
     }
     .img-wrapper {
         background-color: #FFF;
@@ -21,6 +28,11 @@
             text-transform: uppercase;
             margin-top: 3.375em;
         }
+        .adc-share {
+            .share-cont {
+                max-width: 212px;
+            }
+        }
     }
     .desc-wrapper {
         background-color: #0087ff;
@@ -32,13 +44,16 @@
             color: #FFF;
             text-transform: uppercase;
             margin-top: 3.25em;
+            @media all and (max-width: 991px){
+                font-size: 1em;
+            }
         }
         .adc-social {
             .social-cont {
-            }
-        }
-        .adc-share {
-            .share-cont {
+                max-width: 400px;
+                img {
+                    height: 43px;
+                }
             }
         }
     }

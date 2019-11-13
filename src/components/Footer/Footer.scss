@@ -11,5 +11,19 @@
                 }
             }
         }
+        @media all and (max-width: 991px){
+            .footer-logo-cont {
+                text-align: center;
+            }
+            .info-cont {
+                margin-top: 2em;
+                ul {
+                    text-align: center;
+                    li {
+                        font-size: .625em;
+                    }
+                }
+            }
+        }
     }
 }
