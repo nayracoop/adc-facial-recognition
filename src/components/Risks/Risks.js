@@ -13,7 +13,7 @@ const Risks = (props) => {
       {({isVisible}) => 
         <section id='risks'>
           <Container fluid>
-            <h2>Riesgos {isVisible && <Counter max="89" units="%" />}</h2>
+            <h2>Riesgos {isVisible && <Counter max="89" units="%" delay="250" />}</h2>
             {risksList}
           </Container>
         </section>

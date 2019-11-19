@@ -1,6 +1,6 @@
 import React from 'react'
 
-class MatchLevel extends React.Component {
+class Counter extends React.Component {
   
   constructor(props) {
     super(props);
@@ -14,13 +14,18 @@ class MatchLevel extends React.Component {
   }
 
   componentDidMount() {
-    this.timer = setInterval(
-      () => this.updateLevel(),
-      this.state.velocity
+    this.timeOut = setTimeout(
+      () => {
+        this.timer = setInterval(
+          () => this.updateLevel(),
+          this.state.velocity
+        );
+      }, Number(this.props.delay)
     );
   }
 
   componentWillUnmount() {
+    clearTimeout(this.timeOut);
     clearInterval(this.timer);
   }
 
@@ -38,11 +43,11 @@ class MatchLevel extends React.Component {
   render() {
 
     return (
-      <span className='MatchLevel'>
+      <span className='Counter'>
         {Math.round(this.state.level)}{this.props.units}
       </span>
     )
   }
 }
 
-export default MatchLevel
+export default Counter
