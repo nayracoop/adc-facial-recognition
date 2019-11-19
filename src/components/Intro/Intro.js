@@ -1,5 +1,6 @@
 import React from 'react'
 import './Intro.scss'
+import Cam from '../../assets/img/cam.svg'
 import { Container, Row, Col, Jumbotron } from 'react-bootstrap'
 
 const Intro = () => {
@@ -7,9 +8,12 @@ const Intro = () => {
     <Jumbotron fluid className='intro mb-0'>
       <Container fluid className='intro-container'>
         <Row>
-          <Col xs={{ span: 9, offset: 2 }} sm={{ span: 9, offset: 2 }} lg={{ span: 5, offset: 3 }}>
+          <Col xs={12} sm={12} lg={{ span: 5, offset: 3 }}>
             <h1>ConMiCaraNo</h1>
             <p>Reconocimiento facial en la <br />Ciudad de Buenos Aires</p>
+          </Col>
+          <Col className='intro-cam-cont mob-only'>
+            <img src={Cam} height='67' alt='Cam' className='intro-cam' />
           </Col>
         </Row>
       </Container>

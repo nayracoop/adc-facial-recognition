@@ -12,19 +12,19 @@ const Working = (props) => {
       <Container fluid className='what-is'>
         <Row className='mb-5 working-desc'>
           <Col lg={{ span: 6, offset: 3 }}>
-            <h2 class='mb-3'>¿Cómo funciona?</h2>
+            <h2 className='mb-3'>¿Cómo funciona?</h2>
           </Col>
           <TextBlock title='¿Qué es?' headerClass='mb-4' text='El reconocimiento facial es una tecnología biométrica que permite reconocer e identificar a las personas mediante sus rasgos faciales. Si bien hay ciertas aplicaciones del reconocimiento facial que son útiles, esta tecnología ha ido ganando cada vez mayor popularidad como una herramienta de vigilancia y control por parte de diversos gobiernos. El uso indiscriminado, sin una regulación apropiada y precisa está poniendo en grave riesgo el ejercicio y goce de nuestros derechos fundamentales, a la vez que se está redefiniendo cómo disfrutamos de los espacios públicos y desarrollamos nuestra vida en sociedad.' />
         </Row>
 
         <Row className='align-items-center mb-5'>
           <Col lg={4} xs={5}>
-            <img src={Nodos} class='w-100 desk-nodes desk-only' alt='nodos' />
-            <img src={NodosMob} class='w-100 mob-nodes mob-only mb-5' alt='nodos' />
+            <img src={Nodos} className='w-100 desk-nodes desk-only' alt='nodos' />
+            <img src={NodosMob} className='w-100 mob-nodes mob-only mb-5' alt='nodos' />
           </Col>
 
           <Col lg={5} xs={7}>
-            <p class='mb-0'>La tecnología biométrica utiliza las características físicas y de comportamiento que son únicas para cada persona. Permitiendo reconocer, autenticar o identificar, de manera automatizada, a una o múltiples personas.</p>
+            <p className='mb-0'>La tecnología biométrica utiliza las características físicas y de comportamiento que son únicas para cada persona. Permitiendo reconocer, autenticar o identificar, de manera automatizada, a una o múltiples personas.</p>
           </Col>
         </Row>
 
@@ -53,15 +53,15 @@ const Working = (props) => {
 
       <Container fluid>
         <Row className='biometric-cards'>
-          <Col lg={{ span: 6, offset: 3 }}>
-            <h3 class='pt-4 pb-4'>¿Cómo funciona la plantilla biométrica?</h3>
+          <Col lg={{ span: 6, offset: 4 }}>
+            <h3 className='pt-4 pb-4'>¿Cómo funciona la plantilla biométrica?</h3>
           </Col>
           {props.cardsList}
         </Row>
 
         <Row className='mb-5 verify-recognize'>
           <Col lg={{ span: 6, offset: 3 }}>
-            <h3 class='pt-4 pb-4'>¿Cuál es la diferencia entre verificación e identificación?</h3>
+            <h3 className='pt-4 pb-4'>¿Cuál es la diferencia entre verificación e identificación?</h3>
           </Col>
           {props.textWithImage}
         </Row>

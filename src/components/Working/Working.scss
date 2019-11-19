@@ -16,10 +16,18 @@ p {
         h3, p {
             color: #fff;
         }
+        @media all and (max-width: 991px){
+            h2,h3, p {
+                color: #fff;
+            }
+        }
         .working-desc {
             h2, h3 {
                 text-align: center;
             }
+        }
+        .mob-nodes.mob-only {
+            margin-left: -15px;
         }
         .algorithm {
             img {

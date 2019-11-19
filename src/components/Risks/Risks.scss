@@ -41,10 +41,11 @@
         
         .card-body {
             position: relative;
+            justify-content: center;
             @media (max-width: 991px) {
              display: flex;
              align-items: center;
-             padding-top: 2.65rem;
+             padding-top: 2.35rem;
              .card-text {
                  margin-left: 1em;
              }

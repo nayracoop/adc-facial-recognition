@@ -38,11 +38,19 @@ class App extends React.Component {
     ].map(e => { return <RisksCard image={e.image} imgHeight={e.imgHeight} imgWidth={e.imgWidth} imgAlt={e.imgAlt} text={e.text} colClass={e.colClass} /> })
 
     const socialIconsContent = [
-      { image: 'social-fb.svg', imgAlt: 'facebook icon', imgHeight: '56', url: '#' },
-      { image: 'social-ig.svg', imgAlt: 'instagram icon', imgHeight: '56', url: '#' },
-      { image: 'social-link.svg', imgAlt: 'linkedin icon', imgHeight: '56', url: '#' },
-      { image: 'social-tw.svg', imgAlt: 'twitter icon', imgHeight: '56', url: '#' },
-      { image: 'social-yt.svg', imgAlt: 'youtube icon', imgHeight: '56', url: '#' }
+      { image: 'social-fb.svg', imgAlt: 'facebook icon', imgHeight: '57', url: '#' },
+      { image: 'social-ig.svg', imgAlt: 'instagram icon', imgHeight: '57', url: '#' },
+      { image: 'social-link.svg', imgAlt: 'linkedin icon', imgHeight: '57', url: '#' },
+      { image: 'social-tw.svg', imgAlt: 'twitter icon', imgHeight: '57', url: '#' },
+      { image: 'social-yt.svg', imgAlt: 'youtube icon', imgHeight: '57', url: '#' }
+    ].map(e => { return <SocialMedia image={e.image} imgHeight={e.imgHeight} imgAlt={e.imgAlt} url={e.url} /> })
+
+    const bwSocialIconsContent = [
+      { image: 'bw-social-fb.svg', imgAlt: 'facebook icon', imgHeight: '39', url: '#' },
+      { image: 'bw-social-ig.svg', imgAlt: 'instagram icon', imgHeight: '39', url: '#' },
+      { image: 'bw-social-link.svg', imgAlt: 'linkedin icon', imgHeight: '39', url: '#' },
+      { image: 'bw-social-tw.svg', imgAlt: 'twitter icon', imgHeight: '39', url: '#' },
+      { image: 'bw-social-yt.svg', imgAlt: 'youtube icon', imgHeight: '39', url: '#' }
     ].map(e => { return <SocialMedia image={e.image} imgHeight={e.imgHeight} imgAlt={e.imgAlt} url={e.url} /> })
 
     const shareIconsContent = [
@@ -54,7 +62,7 @@ class App extends React.Component {
 
     return (
       <div className='App'>
-        <Header />
+        <Header socialList={bwSocialIconsContent} />
         <Intro />
         <Working cardsList={cardWithImageContent} textWithImage={TextWithImageContent} />
         <Risks riskCardsList={RisksCardContent} />
