@@ -9,16 +9,12 @@ import Counter from '../common/Counter/Counter'
 const Risks = (props) => {
   const risksList = props.riskCardsList.map(item => <Row className='justify-content-center'><Col lg={5} className='mb-5'>{item}</Col></Row>)
   return (
-    <VisibilitySensor partialVisibility={true}>
-      {({isVisible}) => 
-        <section id='risks'>
-          <Container fluid>
-            <h2>Riesgos {isVisible && <Counter max="89" units="%" delay="250" />}</h2>
-            {risksList}
-          </Container>
-        </section>
-      }
-    </VisibilitySensor>
+    <section id='risks'>
+      <Container fluid>
+        <h2>Riesgos</h2>
+        {risksList}
+      </Container>
+    </section>
   )
 }
 

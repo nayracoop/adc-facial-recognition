@@ -2,6 +2,7 @@ import React from 'react'
 import './Intro.scss'
 import Cam from '../../assets/img/cam.svg'
 import { Container, Row, Col, Jumbotron } from 'react-bootstrap'
+import Cam360 from './IntroCamera360'
 import Counter from '../common/Counter/Counter'
 
 const Intro = () => {
@@ -14,11 +15,9 @@ const Intro = () => {
             <p>Reconocimiento facial en la <br />Ciudad de Buenos Aires</p>
             <Counter max="89" units="%" />
           </Col>
-          <Col className='intro-cam-cont mob-only'>
-            <img src={Cam} height='67' alt='Cam' className='intro-cam' />
-          </Col>
         </Row>
       </Container>
+      <Cam360 className='mob-only' />
     </Jumbotron>
   )
 }

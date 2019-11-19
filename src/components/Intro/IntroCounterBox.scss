@@ -1,0 +1,23 @@
+.IntroCounterBox {
+  color: #fff;
+  border: 1.5px solid #242424;
+  text-transform: uppercase;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 1;
+  padding: 0.5em;
+  width: 20%;
+  min-width: 90px;
+
+  .Counter {
+    font-size: 2em;
+    letter-spacing: 0;
+  }
+
+  span {
+    display: block;
+    font-size: 0.5em;
+    letter-spacing: 0.1em;
+  }
+
+}
