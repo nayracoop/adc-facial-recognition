@@ -1,9 +1,6 @@
 import React from 'react'
 import './Risks.scss'
 import {Container, Row, Col} from 'react-bootstrap'
-import VisibilitySensor from 'react-visibility-sensor'
-
-import Counter from '../common/Counter/Counter'
 
 
 const Risks = (props) => {

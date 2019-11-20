@@ -10,7 +10,10 @@ p {
 #working {
     padding-top: 0;
     .what-is-cont {
-        background: #242424;
+        background: transparent;
+        @media all and (max-width: 991px){
+            background: linear-gradient(180deg, rgba(2, 0, 36, 0) 0%, #242424 15%, #242424 100%);
+        }
         position: relative;
         margin-bottom: 8em;
         .what-is {
@@ -39,6 +42,16 @@ p {
                     max-height: 320px;
                 }
             }
+        }
+        &::before {
+            content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background: #242424;
+                z-index: -1;
         }
         &::after {
             content: '';
