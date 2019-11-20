@@ -44,7 +44,7 @@ const Header = (props) => {
                   <div className='light' />
                   <img src={Cam} height='67' alt='Cam' className='header-cam' />
                 </div>
-                <div class='text-center header-social mob-only'>
+                <div className='text-center header-social mob-only'>
                   <h3 className='mb-4'>Redes ADC</h3>
                   <div className='d-flex justify-content-around social-cont m-auto'>
                     {props.socialList}

@@ -1,4 +1,10 @@
 #footer {
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+    @media all and (max-width: 991px){
+        padding-top: 2.18rem;
+        padding-bottom: 2.18rem;
+    }
     .main-footer {
         ul {
             text-align: right;

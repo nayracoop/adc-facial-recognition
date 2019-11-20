@@ -12,7 +12,7 @@ const Intro = () => {
           <Col xs={12} sm={12} lg={{ span: 5, offset: 3 }}>
             <h1>ConMiCaraNo</h1>
             <p>Reconocimiento facial en la <br />Ciudad de Buenos Aires</p>
-            <Counter max="89" units="%" />
+            <Counter max='89' units='%' />
           </Col>
           <Col className='intro-cam-cont mob-only'>
             <img src={Cam} height='67' alt='Cam' className='intro-cam' />

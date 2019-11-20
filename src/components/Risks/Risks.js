@@ -3,10 +3,10 @@ import './Risks.scss'
 import {Container, Row, Col} from 'react-bootstrap'
 
 const Risks = (props) => {
-  const risksList = props.riskCardsList.map(item => <Row className='justify-content-center'><Col lg={5} className='mb-5'>{item}</Col></Row>)
+  const risksList = props.riskCardsList.map(item => <Row className='justify-content-center'><Col md={9} lg={8} className='mb-5 risk-card-cont'>{item}</Col></Row>)
   return (
     <section id='risks'>
-      <Container fluid>
+      <Container>
         <h2>Riesgos</h2>
         {risksList}
       </Container>

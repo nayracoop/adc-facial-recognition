@@ -7,7 +7,8 @@
             @media (max-width: 991px) {
                 padding: 2rem 0 0 0;
             }
-            .navbar-brand {                
+            .navbar-brand {            
+                padding: 0;    
                 @media (max-width: 991px) {
                     img {
                         height: 46px;
@@ -20,9 +21,17 @@
                     text-transform: uppercase;
                     font-weight: 800;
                     color: #FFF;
-                    &:last-of-type {
-                        margin-right: 0;
+                    padding: 5px 0;
+                    margin: 0 1.25rem;
+                    border-bottom: 2px solid transparent;
+                    transition: border .1s ease-in-out;
+                    &:hover,
+                    &:active {
+                        border-bottom: 2px solid #FFF;
                     }
+                    /*&:last-of-type {
+                        margin-right: 0;
+                    }*/
                     @media (max-width: 991px) {
                         font-size: .8125rem;
                         margin-bottom: 1.2rem;

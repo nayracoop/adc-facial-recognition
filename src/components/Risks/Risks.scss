@@ -1,12 +1,12 @@
 #risks {
     background-image: url('../../assets/img/risks-bg.svg');
     background-color: #fac716;
-    background-position: top center;
+    background-position: center -2px;
     background-repeat: no-repeat;
     background-size: 100%;
     padding-bottom: 0;
     @media (max-width: 991px) {
-        background-size: 2600px;
+        background-size: 2000px;
     }
 
     h2 {
@@ -17,6 +17,7 @@
         margin-bottom: 0;
         @media (max-width: 991px) {
             padding-top: 8.875rem;
+            padding-bottom: 4.5rem;
         }
     } 
     .card {
@@ -35,13 +36,19 @@
             right: 0;
         }
         .card-text {
-            font-size: 1em;
+            font-size: 1.25em;
             color: #FFF;
+            line-height: 26px;
+            @media (max-width: 991px) {
+                font-size: 1em;
+            }
         }
         
         .card-body {
             position: relative;
             justify-content: center;
+            padding-top: 38px;
+            padding-bottom: 33px;
             @media (max-width: 991px) {
              display: flex;
              align-items: center;
