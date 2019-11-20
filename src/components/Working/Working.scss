@@ -20,6 +20,16 @@ p {
             h3, p {
                 color: #fff;
             }
+            .desk-nodes {
+                max-width: unset;
+                width: unset !important;
+                height: 300px;
+                margin-left: -95%;
+                @media all and (min-width: 992px) and (max-width: 1200px){
+                    max-height: 159px;
+                    margin-left: -25%!important;
+                }
+            }
             @media all and (max-width: 991px){
                 h2,h3, p {
                     color: #fff;
@@ -31,7 +41,11 @@ p {
                 }
             }
             .mob-nodes.mob-only {
-                margin-left: -15px;
+                margin-left: -45%;
+                width: unset!important;
+                min-width: 200px;
+                max-width: 300px;
+                margin-bottom: 0!important;
             }
             .algorithm {
                 img {

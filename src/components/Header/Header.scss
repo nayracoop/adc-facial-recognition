@@ -1,5 +1,9 @@
 .header-container {
     background: #242424;
+    @media (max-width: 991px) {
+        max-height: 100vh;
+        overflow: hidden;
+    }
     header {
         position: relative;
         nav.navbar-light{
@@ -53,6 +57,8 @@
                     text-align: center;
                     position: relative;
                     z-index: 1;
+                    width: max-content;
+                    margin: 0 auto;
                 }
             }
             #basic-navbar-nav {
@@ -92,10 +98,37 @@
             .navbar-collapse {
                 
                 .header-cam-cont {
+                   /* position: absolute;
+                    height: 50vh;
+                    width: 100vw;
+                    background: blue;
+                    top: 0;
+                    left: -15px;*/
+                    position: absolute;
+                    //height: 68vh;
+                    width: 200vw;
+                    background: linear-gradient(180deg, rgba(0,109,141,1) 35%, rgba(0,179,238,1) 100%);
+                    top: -500px;
+                    height: 800px;
+                    left: -100vw;
+                    right: -100vw;
+                    margin: auto;
+                    display: flex;
+                    align-items: end;
+                    justify-content: center;
+                    transform-origin: bottom center;
+                    transform: rotate(180deg);
+                    /*transition: all 1s;
+                    transition-delay: 2s;
+                    transition-duration: 1s;*/
+                    &.rotate {
+                        transform: rotate(0deg);
+                    }
                     .header-cam {
                         margin-top: 5.25rem;
                         position: relative;
                         z-index: 2;
+                        margin-bottom: -42px;
                     }
                     .light {
                         //display: none;
@@ -165,9 +198,37 @@
                                 height: 50vh;*/
                             }
                         }
+                        
+                        &::before,
+                        &::after {
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            width: 100vw;
+                            bottom: -1px;
+                            right: 0;
+                            border-top: none;
+                            /*border-bottom: 165px solid #242424;
+                            border-left: 50vw solid transparent;*/
+                            border-bottom: 75vw solid #242424;
+                            border-left: 100vw solid transparent;
+                            z-index: 1;
+                        }
+                        
+                        &::after {
+                            border-top: none;
+                            border-bottom: 75vw solid #242424;
+                            border-right: 100vw solid transparent;
+                            border-left: 0 solid transparent;
+                            right: auto;
+                            left: 0;
+                        }
                     }
                 .header-social {
                     margin-top: 3.3rem;
+                    position: relative;
+                    z-index: 2;
+                    margin-top: 35vh;
                     h3 {
                         color: #6a6a6a;
                         text-transform: uppercase;

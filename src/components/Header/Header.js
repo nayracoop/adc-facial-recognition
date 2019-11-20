@@ -5,18 +5,30 @@ import Logo from '../../assets/img/logo.svg'
 import Cam from '../../assets/img/cam.svg'
 
 const Header = (props) => {
-  function pepito (expanded) {
+  function openHeader (expanded) {
     if (expanded) {
-      document.body.style.overflow = 'hidden'
-      // document.querySelector('.navbar-brand').style.zIndex = '-1'
-      document.querySelector('.navbar-brand').style.opacity = '0'
-      // document.querySelector('.navbar-brand').classList.add('d-none')
+      //document.body.style.overflow = 'hidden'
+      document.querySelector('.header-cam-cont').classList.toggle('rotate')
     } else {
       document.body.style.overflow = 'auto'
-      // document.querySelector('.navbar-brand').style.zIndex = '1'
-      document.querySelector('.navbar-brand').style.opacity = '1'
-      document.querySelector('.navbar-brand').classList.remove('d-none')
+      //document.querySelector('.navbar-brand').classList.remove('d-none')
+      //document.querySelector('.header-cam-cont').classList.remove('rotate')
+      document.querySelector('.header-cam-cont').classList.toggle('rotate')
     }
+    /*const toggler =  document.querySelector('.navbar-toggler')
+    let link = document.querySelector('.nav-link') 
+
+    toggler.onclick = function() {
+      document.querySelector('.navbar-brand').classList.toggle('hide-logo')
+    }
+    
+    link.onclick = function() {
+      console.log(link)
+      document.body.style.overflow = 'auto'
+      document.querySelector('#basic-navbar-nav').classList.remove('show');
+      toggler.classList.add('collapsed');
+      document.querySelector('.navbar-brand').style.opacity = '1'
+    }*/
   }
   /* let navBar = document.querySelector('.navbar-toggler')
     if (navBar && navBar.classList.contains('collapsed')) {
@@ -28,7 +40,7 @@ const Header = (props) => {
       <Row>
         <Col lg={{ span: 10, offset: 1 }}>
           <header>
-            <Navbar expand='lg' onToggle={pepito}>
+            <Navbar expand='lg' onToggle={openHeader}>
               <Navbar.Brand href='#'>
                 <span className='sr-only'>ADC por los derechos civiles</span>
                 <img src={Logo} height='75' alt='ADC por los derechos civiles' />
@@ -41,7 +53,6 @@ const Header = (props) => {
                   <Nav.Link href='#about-adc'>¿qué está haciendo la ADC?</Nav.Link>
                 </Nav>
                 <div className='header-cam-cont mob-only'>
-                  <div className='light' />
                   <img src={Cam} height='67' alt='Cam' className='header-cam' />
                 </div>
                 <div className='text-center header-social mob-only'>

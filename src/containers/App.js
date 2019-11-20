@@ -46,11 +46,11 @@ class App extends React.Component {
     ].map(e => { return <SocialMedia image={e.image} imgHeight={e.imgHeight} imgAlt={e.imgAlt} url={e.url} /> })
 
     const bwSocialIconsContent = [
-      { image: 'bw-social-fb.svg', imgAlt: 'facebook icon', imgHeight: '39', url: '#' },
-      { image: 'bw-social-ig.svg', imgAlt: 'instagram icon', imgHeight: '39', url: '#' },
-      { image: 'bw-social-link.svg', imgAlt: 'linkedin icon', imgHeight: '39', url: '#' },
-      { image: 'bw-social-tw.svg', imgAlt: 'twitter icon', imgHeight: '39', url: '#' },
-      { image: 'bw-social-yt.svg', imgAlt: 'youtube icon', imgHeight: '39', url: '#' }
+      { image: 'bw-social-fb.svg', imgAlt: 'facebook icon', imgHeight: '39', url: 'https://www.facebook.com/ADCderechos/' },
+      { image: 'bw-social-ig.svg', imgAlt: 'instagram icon', imgHeight: '39', url: 'https://www.instagram.com/ADCderechos/ ' },
+      { image: 'bw-social-link.svg', imgAlt: 'linkedin icon', imgHeight: '39', url: 'https://www.linkedin.com/company/adcderechos/' },
+      { image: 'bw-social-tw.svg', imgAlt: 'twitter icon', imgHeight: '39', url: 'https://twitter.com/ADCderechos' },
+      { image: 'bw-social-yt.svg', imgAlt: 'youtube icon', imgHeight: '39', url: 'https://www.youtube.com/user/ADCderechos' }
     ].map(e => { return <SocialMedia image={e.image} imgHeight={e.imgHeight} imgAlt={e.imgAlt} url={e.url} /> })
 
     const shareIconsContent = [
