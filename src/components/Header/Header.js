@@ -10,7 +10,7 @@ const Header = (props) => {
       //document.body.style.overflow = 'hidden'
       document.querySelector('.header-cam-cont').classList.toggle('rotate')
     } else {
-      document.body.style.overflow = 'auto'
+      //document.body.style.overflow = 'auto'
       //document.querySelector('.navbar-brand').classList.remove('d-none')
       //document.querySelector('.header-cam-cont').classList.remove('rotate')
       document.querySelector('.header-cam-cont').classList.toggle('rotate')
@@ -40,7 +40,7 @@ const Header = (props) => {
       <Row>
         <Col lg={{ span: 10, offset: 1 }}>
           <header>
-            <Navbar expand='lg' onToggle={openHeader}>
+            <Navbar expand='lg' onToggle={openHeader} collapseOnSelect={true}>
               <Navbar.Brand href='#'>
                 <span className='sr-only'>ADC por los derechos civiles</span>
                 <img src={Logo} height='75' alt='ADC por los derechos civiles' />

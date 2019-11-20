@@ -5,7 +5,14 @@
         overflow: hidden;
     }
     header {
-        position: relative;
+        position: fixed;
+        left: 0;
+        right: 0;
+        padding: 0 15px 15px;
+        top: 0;
+        z-index: 100;
+        background: #242424;
+
         nav.navbar-light{
             padding: 2.8rem 0 0 0;
             @media (max-width: 991px) {

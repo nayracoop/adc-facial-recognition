@@ -8,7 +8,7 @@ const IntroCounterBox = (props) => {
     <VisibilitySensor partialVisibility={true}>
       {({isVisible}) => 
         <div class={ 'IntroCounterBox ' + props.className }>
-          {isVisible && <Counter max={props.max} units="%" delay={Math.random()*100} />}
+          {(isVisible && <Counter max={props.max} units="%" delay={Math.random()*100} />) || <span class="Counter">0%</span>}
           <span>Coincidencia</span>
         </div>
       }
