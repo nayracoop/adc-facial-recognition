@@ -5,13 +5,26 @@
         overflow: hidden;
     }
     header {
-        position: fixed;
-        left: 0;
-        right: 0;
-        padding: 0 15px 15px;
-        top: 0;
-        z-index: 100;
-        background: #242424;
+
+        position: relative;
+        @media (max-width: 991px) {
+            position: fixed;
+            left: 0;
+            right: 0;
+            padding: 0 15px 15px;
+            top: 0;
+            z-index: 100;
+            background: #242424;
+            transition: transform 400ms ease-in-out;
+
+            &.opened {
+                transition: none;
+            }
+
+            &.hidden {
+                transform: translateY(-100px);
+            }
+        }
 
         nav.navbar-light{
             padding: 2.8rem 0 0 0;
