@@ -25,8 +25,8 @@ const AboutADC = (props) => {
           <Row className='desc-wrapper justify-content-center'>
             <Col lg={11} className='text-center'>
               <h2 className='pb-4'>¿Qué está haciendo la ADC?</h2>
-              <p>Creemos que hay suficientes razones que justifican establecer una restricción absoluta del uso de reconocimiento facial por parte de las fuerzas de seguridad e inteligencia con fines de vigilancia.</p>
-              <p>Llevamos al Gobierno de la Ciudad a juicio por la implementación de este sistema en el espacio público porteño.</p>
+              <p>Creemos que hay suficientes razones que justifican establecer una restricción absoluta del uso de reconocimiento facial, por parte de las fuerzas de seguridad e inteligencia, con fines de vigilancia.</p>
+              <p>A fines de octubre, <a href='https://adc.org.ar/2019/11/06/el-reconocimiento-facial-para-vigilancia-no-pertenece-a-nuestro-espacio-publico/'>iniciamos una acción ante el Tribunal Superior de Justicia de la Ciudad de Buenos Aires para que determine la inconstitucionalidad del Sistema de Reconocimiento Facial</a>. El objetivo de este litigio es que la Resolución 398/19, que crea el sistema, pierda vigencia.</p>
             </Col>
             <Col lg={12} className='adc-social text-center' >
               <h3 className='mb-4'>Redes ADC</h3>

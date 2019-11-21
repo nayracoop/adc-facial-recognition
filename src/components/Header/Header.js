@@ -4,64 +4,63 @@ import { Navbar, Nav, Container, Row, Col } from 'react-bootstrap'
 import Logo from '../../assets/img/logo.svg'
 import Cam from '../../assets/img/cam.svg'
 
-let lastScrollY = 0;
+let lastScrollY = 0
 
 class Header extends React.Component {
-
-  constructor(props) {
-    super(props);
+  constructor (props) {
+    super(props)
     this.state = {
       scrolled: false,
       scrolledUp: false,
-      opened: false,
+      opened: false
     }
   }
 
-  componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll, true);
-    this.handleScroll();
+  componentDidMount () {
+    window.addEventListener('scroll', this.handleScroll, true)
+    this.handleScroll()
   }
 
-  componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
+  componentWillUnmount () {
+    window.removeEventListener('scroll', this.handleScroll)
   }
-  
+
   handleScroll = () => {
-    const isScrolledUp = lastScrollY - window.scrollY > 0;
-    const isScrolled = window.scrollY > 0;
-    lastScrollY = window.scrollY;
-    if(isScrolled !== this.state.scrolled || isScrolledUp !== this.state.scrolledUp) {
-      this.setState({ scrolled: isScrolled, scrolledUp: isScrolledUp });
+    const isScrolledUp = lastScrollY - window.scrollY > 0
+    const isScrolled = window.scrollY > 0
+    lastScrollY = window.scrollY
+    if (isScrolled !== this.state.scrolled || isScrolledUp !== this.state.scrolledUp) {
+      this.setState({ scrolled: isScrolled, scrolledUp: isScrolledUp })
     }
   }
-  
+
   openHeader = (expanded) => {
-    this.setState({ opened: expanded });
+    this.setState({ opened: expanded })
 
     if (expanded) {
-      //document.body.style.overflow = 'hidden'
-      this.setState({ opened: expanded });
+      // document.body.style.overflow = 'hidden'
+      this.setState({ opened: expanded })
       document.querySelector('.header-cam-cont').classList.toggle('rotate')
     } else {
-      //document.body.style.overflow = 'auto'
-      //document.querySelector('.navbar-brand').classList.remove('d-none')
-      //document.querySelector('.header-cam-cont').classList.remove('rotate')
+      // document.body.style.overflow = 'auto'
+      // document.querySelector('.navbar-brand').classList.remove('d-none')
+      // document.querySelector('.header-cam-cont').classList.remove('rotate')
       document.querySelector('.header-cam-cont').classList.toggle('rotate')
     }
-    /*const toggler =  document.querySelector('.navbar-toggler')
-    let link = document.querySelector('.nav-link') 
+    /* const toggler =  document.querySelector('.navbar-toggler')
+    let link = document.querySelector('.nav-link')
 
     toggler.onclick = function() {
       document.querySelector('.navbar-brand').classList.toggle('hide-logo')
     }
-    
+
     link.onclick = function() {
       console.log(link)
       document.body.style.overflow = 'auto'
       document.querySelector('#basic-navbar-nav').classList.remove('show');
       toggler.classList.add('collapsed');
       document.querySelector('.navbar-brand').style.opacity = '1'
-    }*/
+    } */
   }
   /* let navBar = document.querySelector('.navbar-toggler')
     if (navBar && navBar.classList.contains('collapsed')) {
@@ -70,16 +69,15 @@ class Header extends React.Component {
   pepito() */
 
   render () {
-
-    let classes = this.state.scrolled && !this.state.scrolledUp && !this.state.opened ? 'hidden' : '';
-    if(this.state.opened) classes = 'opened';
+    let classes = this.state.scrolled && !this.state.scrolledUp && !this.state.opened ? 'hidden' : ''
+    if (this.state.opened) classes = 'opened'
 
     return (
       <Container fluid className='header-container'>
         <Row>
           <Col lg={{ span: 10, offset: 1 }}>
             <header className={classes}>
-              <Navbar expand='lg' onToggle={this.openHeader} collapseOnSelect={true}>
+              <Navbar expand='lg' onToggle={this.openHeader} collapseOnSelect>
                 <Navbar.Brand href='#'>
                   <span className='sr-only'>ADC por los derechos civiles</span>
                   <img src={Logo} height='75' alt='ADC por los derechos civiles' />

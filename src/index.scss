@@ -3,6 +3,7 @@ body {
   font-family: 'Work Sans', sans-serif!important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 p {
@@ -38,6 +39,9 @@ h1 {
 h2 {
   font-size: 4.25em;
   margin-bottom: 2em;
+  @media (max-width: 350px) {
+    font-size: 2rem;
+  }
   @media (max-width: 991px) {
     font-size: 2.375rem;
     text-align: center;
@@ -51,7 +55,12 @@ h3 {
   }
 }
 
-
+.container {
+  @media (max-width: 576px) {
+    //max-width: 360px;
+    padding: 0 30px!important;
+  }
+  }
 @media (max-width: 991px) {
   .desk-only {
     display: none!important;

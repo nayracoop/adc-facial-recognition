@@ -11,7 +11,8 @@
             position: fixed;
             left: 0;
             right: 0;
-            padding: 0 15px 15px;
+            //padding: 0 15px 15px;
+            padding: 18px 30px;
             top: 0;
             z-index: 100;
             background: #242424;
@@ -29,10 +30,12 @@
         nav.navbar-light{
             padding: 2.8rem 0 0 0;
             @media (max-width: 991px) {
-                padding: 2rem 0 0 0;
+                //padding: 2rem 0 0 0;
+                padding: 0;
             }
             .navbar-brand {            
-                padding: 0;    
+                padding: 0;  
+                margin-right: 0;  
                 @media (max-width: 991px) {
                     img {
                         height: 46px;
@@ -50,6 +53,9 @@
                     margin: 0 1.25rem;
                     border-bottom: 2px solid transparent;
                     transition: border .1s ease-in-out;
+                    @media all and (max-height: 400px) and (orientation: landscape) {
+                        margin: 0 .75rem;
+                    }
                     &:hover,
                     &:active {
                         border-bottom: 2px solid #FFF;
@@ -94,12 +100,17 @@
                         transition: none;
                     }
                 }
+                @media all and (max-height: 600px) and (orientation: landscape) {
+                    &.navbar-collapse.show {
+                        margin-top: -50px;
+                    }
+                }
             }
             .navbar-toggler {
                 border: 0;
+                padding: 0;
                 .navbar-toggler-icon {
-                    width: 25px;
-                    height: 25px;
+                    width: 33px;
                 }
                 &.collapsed{
                     .navbar-toggler-icon {
@@ -141,14 +152,40 @@
                     /*transition: all 1s;
                     transition-delay: 2s;
                     transition-duration: 1s;*/
+                    @media all and (max-height: 600px) and (orientation: landscape) {
+                        top: -660px;
+                        height: 793px;
+                        .header-cam { 
+                            height: 45px;
+                            margin-bottom: -32px!important;
+                        }
+                        &::before,
+                        &::after {
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            width: 100vw;
+                            bottom: -1px;
+                            right: 0;
+                            border-top: none;
+                            /*border-bottom: 165px solid #242424;
+                            border-left: 50vw solid transparent;*/
+                            border-bottom: 20vw solid #242424!important;
+                            border-left: 100vw solid transparent;
+                            z-index: 1;
+                        }
+                    } 
                     &.rotate {
                         transform: rotate(0deg);
                     }
                     .header-cam {
                         margin-top: 5.25rem;
-                        position: relative;
+                        /*position: relative;
+                        margin-bottom: -42px;*/
+                        position: absolute;
+                        margin-bottom: -50px;
+                        bottom: 0;
                         z-index: 2;
-                        margin-bottom: -42px;
                     }
                     .light {
                         //display: none;
@@ -258,6 +295,9 @@
                         margin-top: 1.95rem;
                         max-width: 290px;
                     }
+                    @media all and (max-height: 600px) and (orientation: landscape) {
+                        margin-top: 22vh;
+                    } 
                 }
             }
         }

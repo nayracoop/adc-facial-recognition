@@ -10,7 +10,7 @@ const Footer = () => {
           <Col lg={{ span: 2, offset: 2 }} className='footer-logo-cont'>
             <img src={require('../../assets/img/logo-footer.svg')} height='64' alt='ADC por los derechos civiles' />
           </Col>
-          <Col xs={{ span: 8, offset: 2 }} lg={{ span: 4, offset: 2 }} className='info-cont'>
+          <Col xs={{ span: 10, offset: 1 }} lg={{ span: 4, offset: 2 }} className='info-cont'>
             <ul>
               <li>Tucumán 924 8° (C1049AAT) Ciudad Autónoma de Buenos Aires - Argentina</li>
               <li>Teléfono: <a href='tel:+541152360555'>(54 11) 5236-0555</a> | <a href='mailto:contacto@adc.org.ar'>contacto@adc.org.ar</a></li>

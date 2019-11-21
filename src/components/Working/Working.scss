@@ -8,6 +8,9 @@ p {
     color: #5d6884;
 }
 #working {
+    a {
+        text-decoration: underline;
+    }
     padding-top: 0;
     .what-is-cont {
         background: transparent;
@@ -23,11 +26,19 @@ p {
             .desk-nodes {
                 max-width: unset;
                 width: unset !important;
-                height: 300px;
+                height: 200px;
                 margin-left: -95%;
                 @media all and (min-width: 992px) and (max-width: 1200px){
                     max-height: 159px;
                     margin-left: -25%!important;
+                }
+                @media all and (min-width: 1201px) {
+                    height: 250px;
+                    margin-left: -60%;
+                }
+                @media all and (min-width: 1500px) {
+                    margin-left: -90%;
+                    height: 300px;
                 }
             }
             @media all and (max-width: 991px){
@@ -43,7 +54,7 @@ p {
             .mob-nodes.mob-only {
                 margin-left: -45%;
                 width: unset!important;
-                min-width: 200px;
+                //min-width: 200px;
                 max-width: 300px;
                 margin-bottom: 0!important;
             }
@@ -70,14 +81,20 @@ p {
         &::after {
             content: '';
                 position: absolute;
-                bottom: -250px;
                 left: 0;
                 width: 100%;
+                /*
+                bottom: -250px;
                 height: 500px;
                 clip-path: polygon(0% 0%, 100% 50px, 100% 50%, 0% calc(100% - 150px));
+                */
                 background: #242424;
                 z-index: -1;
-        }
+                border-left: 99vw solid #242424;
+                border-bottom: 6em solid white;
+                bottom: -6em;
+                border-top: 6vw solid #242424;
+            }
     }
     .biometric-cards-cont {
         .biometric-cards{
@@ -142,7 +159,7 @@ p {
                 }
                 .step {
                     font-family: 'Work Sans', sans-serif;
-                    font-size: 2.125em;
+                    font-size: 2em;
                     font-weight: 800;
                     border-radius: 100px;
                     border: 2px solid #3f485d;
@@ -186,6 +203,7 @@ p {
                     @media all and (max-width: 991px){
                         font-size: 1rem;
                         text-align: left;
+                        line-height: 22px;
                     }
                 }
                 .no-gutters {
@@ -195,12 +213,12 @@ p {
                     padding: 1.5rem 2rem;
                     border-radius: 15px;
                     @media all and (max-width: 991px){
-                        padding-top: 75px;
+                        padding-top: 55px;
                     }
                     .card-body {
                         padding: 1.25rem 15px;
                         @media all and (max-width: 991px){
-                            margin-top: 2.25em;
+                            margin-top: 1em;
                             padding: 1.25em 0;
                         }
                     }
