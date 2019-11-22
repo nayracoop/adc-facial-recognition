@@ -97,6 +97,7 @@ p {
             }
     }
     .biometric-cards-cont {
+        overflow: hidden;
         .biometric-cards{
             margin-bottom: 8em;
             h3:first-of-type {
@@ -234,6 +235,32 @@ p {
                 }
                 &.inner-card-img:last-of-type {
                     margin-bottom: 0!important;
+                }
+
+                transition: transform 0ms ease-in-out, opacity 0ms ease-in-out, left 0s ease-in-out, right 0s ease-in-out;
+                transition-delay: 0s;
+                &:nth-child(even) {
+                    transition-duration: 400ms, 300ms, 1s, 1s;
+                    transition-delay: 200ms;
+                    transform: translateX(-300px);
+                    left: 50px;
+                }
+                &:nth-child(odd) {
+                    transition-duration: 400ms, 300ms, 1s, 1s;
+                    transition-delay: 200ms;
+                    transform: translateX(300px);
+                    right: 50px;
+                }
+                opacity: 0;
+                &.in {
+                    transform: none;
+                    opacity: 1;
+                    &:nth-child(even) {
+                        left: 0;
+                    }
+                    &:nth-child(odd) {
+                        right: 0;
+                    }
                 }
             }
         }
