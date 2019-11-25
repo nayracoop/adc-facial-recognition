@@ -55,7 +55,7 @@ class App extends React.Component {
 
     const shareIconsContent = [
       { image: 'share-fb.svg', imgAlt: 'facebook icon', imgHeight: '40', url: 'https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fconmicarano.adc.org.ar' },
-      { image: 'share-tw.svg', imgAlt: 'twitter icon', imgHeight: '40', url: 'https://twitter.com/intent/tweet/?text=Con%20mi%20cara%20no%3A%20El%20reconocimiento%20facial%20no%20pertenece%20a%20nuestro%20espacio%20p%C3%BAblico.%20Conoc%C3%A9%20m%C3%A1s%20en%20conmicarano.adc.org.ar%20y%20unite%20a%20la%20campa%C3%B1a%20%23ConMiCaraNo;url=https%3A%2F%2Fconmicarano.adc.org.ar&via=adcderechos' },
+      { image: 'share-tw.svg', imgAlt: 'twitter icon', imgHeight: '40', url: 'https://twitter.com/intent/tweet/?text=Con%20mi%20cara%20no%3A%20El%20reconocimiento%20facial%20no%20pertenece%20a%20nuestro%20espacio%20p%C3%BAblico.%20Conoc%C3%A9%20m%C3%A1s%20en%20conmicarano.adc.org.ar%20y%20unite%20a%20la%20campa%C3%B1a%20%23ConMiCaraNo&url=https%3A%2F%2Fconmicarano.adc.org.ar&via=adcderechos' },
       { image: 'share-wsp.svg', imgAlt: 'whatsapp icon', imgHeight: '40', url: 'whatsapp://send?text=Con%20mi%20cara%20no%3A%20El%20reconocimiento%20facial%20no%20pertenece%20a%20nuestro%20espacio%20p%C3%BAblico.%20Conoc%C3%A9%20m%C3%A1s%20en%20https%3A%2F%2Fconmicarano.adc.org.ar%20y%20unite%20a%20la%20campa%C3%B1a%20%23ConMiCaraNo' }
     ].map(e => { return <SocialMedia image={e.image} imgHeight={e.imgHeight} imgAlt={e.imgAlt} url={e.url} /> })
 
