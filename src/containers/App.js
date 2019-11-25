@@ -28,11 +28,11 @@ class App extends React.Component {
 
     const RisksCardContent = [
       { image: 'risks-icon.svg', imgHeight: '61', imgWidth: '61', imgAlt: 'icono riesgos', text: 'Uso encubierto o sin consentimiento de la población.', colClass: 'col-lg-4 offset-3' },
-      { image: 'risks-icon.svg', imgHeight: '61', imgWidth: '61', imgAlt: 'icono riesgos', text: 'Inversión de la carga de la prueba: todos son culpables hasta que el sistema /algoritmo diga que no lo son. Afectación a garantías del debido proceso.', colClass: 'col-lg-4 offset-3' },
+      { image: 'risks-icon.svg', imgHeight: '61', imgWidth: '61', imgAlt: 'icono riesgos', text: 'Inversión de la carga de la prueba: todos son culpables hasta que el sistema / algoritmo diga que no lo son. Afectación a garantías del debido proceso.', colClass: 'col-lg-4 offset-3' },
       { image: 'risks-icon.svg', imgHeight: '61', imgWidth: '61', imgAlt: 'icono riesgos', text: 'Discriminación: la tecnología es imprecisa y arroja un alto porcentaje de falsos positivos contra personas de tez no blanca y mujeres (además de otras comunidades vulnerables).', colClass: 'col-lg-4 offset-3' },
       { image: 'risks-icon.svg', imgHeight: '61', imgWidth: '61', imgAlt: 'icono riesgos', text: 'Uso sin una base legal que regule específicamente el uso (caso de Argentina).', colClass: 'col-lg-4 offset-3' },
       { image: 'risks-icon.svg', imgHeight: '61', imgWidth: '61', imgAlt: 'icono riesgos', text: 'Filtraciones o hackeos a la base de datos por una pobre o nula implementación de medidas de seguridad.', colClass: 'col-lg-4 offset-3' },
-      { image: 'risks-icon.svg', imgHeight: '61', imgWidth: '61', imgAlt: 'icono riesgos', text: 'Uso ubicuo, a partir de una implementación en tiempo real o utilización de fotografías o/videos que hayan sido capturadas o grabados en el pasado.', colClass: 'col-lg-4 offset-3' },
+      { image: 'risks-icon.svg', imgHeight: '61', imgWidth: '61', imgAlt: 'icono riesgos', text: 'Uso ubicuo, a partir de una implementación en tiempo real o utilización de fotografías o videos que hayan sido capturadas o grabados en el pasado.', colClass: 'col-lg-4 offset-3' },
       { image: 'risks-icon.svg', imgHeight: '61', imgWidth: '61', imgAlt: 'icono riesgos', text: 'Permite individualizar y realizar un seguimiento preciso de cada persona.', colClass: 'col-lg-4 offset-3' },
       { image: 'risks-icon.svg', imgHeight: '61', imgWidth: '61', imgAlt: 'icono riesgos', text: 'Facilita la vigilancia masiva en forma automatizada: los algoritmos de reconocimiento facial deben necesariamente detectar todas las caras que ven las cámaras en donde están implementados. Por más que el nombre de una persona no esté vinculado a su rostro, el software igualmente lo estará reconociendo.', colClass: 'col-lg-4 offset-3' }
     ].map(e => { return <RisksCard image={e.image} imgHeight={e.imgHeight} imgWidth={e.imgWidth} imgAlt={e.imgAlt} text={e.text} colClass={e.colClass} /> })
@@ -55,8 +55,8 @@ class App extends React.Component {
 
     const shareIconsContent = [
       { image: 'share-fb.svg', imgAlt: 'facebook icon', imgHeight: '40', url: 'https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fconmicarano.adc.org.ar' },
-      { image: 'share-tw.svg', imgAlt: 'twitter icon', imgHeight: '40', url: 'https://twitter.com/intent/tweet/?text=&amp;url=https%3A%2F%2Fconmicarano.adc.org.ar' },
-      { image: 'share-wsp.svg', imgAlt: 'whatsapp icon', imgHeight: '40', url: 'whatsapp://send?text=%20https%3A%2F%2Fconmicarano.adc.org.ar' }
+      { image: 'share-tw.svg', imgAlt: 'twitter icon', imgHeight: '40', url: 'https://twitter.com/intent/tweet/?text=Con%20mi%20cara%20no%3A%20El%20reconocimiento%20facial%20no%20pertenece%20a%20nuestro%20espacio%20p%C3%BAblico.%20Conoc%C3%A9%20m%C3%A1s%20en%20conmicarano.adc.org.ar%20y%20unite%20a%20la%20campa%C3%B1a%20%23ConMiCaraNo;url=https%3A%2F%2Fconmicarano.adc.org.ar&via=adcderechos' },
+      { image: 'share-wsp.svg', imgAlt: 'whatsapp icon', imgHeight: '40', url: 'whatsapp://send?text=Con%20mi%20cara%20no%3A%20El%20reconocimiento%20facial%20no%20pertenece%20a%20nuestro%20espacio%20p%C3%BAblico.%20Conoc%C3%A9%20m%C3%A1s%20en%20https%3A%2F%2Fconmicarano.adc.org.ar%20y%20unite%20a%20la%20campa%C3%B1a%20%23ConMiCaraNo' }
     ].map(e => { return <SocialMedia image={e.image} imgHeight={e.imgHeight} imgAlt={e.imgAlt} url={e.url} /> })
 
     return (

@@ -8,9 +8,6 @@ p {
     color: #5d6884;
 }
 #working {
-    a {
-        text-decoration: underline;
-    }
     padding-top: 0;
     .what-is-cont {
         background: transparent;
@@ -22,6 +19,12 @@ p {
         .what-is {
             h3, p {
                 color: #fff;
+            }
+            p {
+                line-height: 26px;
+                @media all and (max-width: 991px){
+                    line-height: 22px;
+                }
             }
             .desk-nodes {
                 max-width: unset;
@@ -64,7 +67,7 @@ p {
                     max-width: 100%;
                 }
                 .mob-only {
-                    max-height: 320px;
+                    max-width: 400px;
                 }
             }
         }
@@ -271,6 +274,12 @@ p {
                 width: unset!important;
             }
         }
+        p {
+            line-height: 28px;
+            @media all and (max-width: 991px){
+                line-height: 22px;
+            }
+        }
         @media all and (max-width: 991px){
             h3 {
                 text-align: center;
@@ -300,6 +309,14 @@ p {
                     height: unset!important;
                     width: 100%;
                 }
+            }
+        }
+    }
+    .algorithm-training {
+        p {
+            line-height: 28px;
+            @media all and (max-width: 991px){
+                line-height: 22px;
             }
         }
     }

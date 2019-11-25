@@ -11,6 +11,14 @@ p {
   color: #5d6884;
   @media (max-width: 991px) {
     font-size: 1rem;
+    line-height: 22px;
+  }
+}
+
+a {
+  color: #0087ff;
+  &:hover {
+    color: #0087ff;
   }
 }
 

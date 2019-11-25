@@ -38,35 +38,12 @@ class Header extends React.Component {
     this.setState({ opened: expanded })
 
     if (expanded) {
-      // document.body.style.overflow = 'hidden'
       this.setState({ opened: expanded })
       document.querySelector('.header-cam-cont').classList.toggle('rotate')
     } else {
-      // document.body.style.overflow = 'auto'
-      // document.querySelector('.navbar-brand').classList.remove('d-none')
-      // document.querySelector('.header-cam-cont').classList.remove('rotate')
       document.querySelector('.header-cam-cont').classList.toggle('rotate')
     }
-    /* const toggler =  document.querySelector('.navbar-toggler')
-    let link = document.querySelector('.nav-link')
-
-    toggler.onclick = function() {
-      document.querySelector('.navbar-brand').classList.toggle('hide-logo')
-    }
-
-    link.onclick = function() {
-      console.log(link)
-      document.body.style.overflow = 'auto'
-      document.querySelector('#basic-navbar-nav').classList.remove('show');
-      toggler.classList.add('collapsed');
-      document.querySelector('.navbar-brand').style.opacity = '1'
-    } */
   }
-  /* let navBar = document.querySelector('.navbar-toggler')
-    if (navBar && navBar.classList.contains('collapsed')) {
-      console.log('abierto')
-    }
-  pepito() */
 
   render () {
     let classes = this.state.scrolled && !this.state.scrolledUp && !this.state.opened ? 'hidden' : ''
@@ -94,7 +71,7 @@ class Header extends React.Component {
                   </div>
                   <div className='text-center header-social mob-only'>
                     <h3 className='mb-4'>Redes ADC</h3>
-                    <div className='d-flex justify-content-around social-cont m-auto'>
+                    <div className='d-flex justify-content-center social-cont'>
                       {this.props.socialList}
                     </div>
                   </div>

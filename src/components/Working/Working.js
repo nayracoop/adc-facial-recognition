@@ -20,7 +20,7 @@ const Working = (props) => {
 
           <Row className='align-items-center mb-5'>
             <Col lg={5} xs={5}>
-              <img src={Nodos} className='w-100 desk-nodes desk-only' alt='nodos' />
+              <img src={Nodos} className='desk-nodes desk-only' alt='nodos' />
               <img src={NodosMob} className='w-100 mob-nodes mob-only mb-5' alt='nodos' />
             </Col>
 
@@ -40,7 +40,7 @@ const Working = (props) => {
               image={'algoritmo.svg'}
               imgHeight='183'
               imgAlt='Algoritmo'
-              imgClass='desk-only w-100'
+              imgClass='desk-only'
               class='col-lg-11 algorithm text-center'
               mobImage={'algoritmo-mob.svg'}
               mobImgAlt='Algoritmo'
@@ -70,7 +70,7 @@ const Working = (props) => {
             {props.textWithImage}
           </Row>
 
-          <Row className='mb-5'>
+          <Row className='mb-5 algorithm-training'>
             <TextBlock title='¿Cómo afecta el entrenamiento a los algoritmos de reconocimiento facial?' contClass='col-lg-10 offset-lg-1' headerClass='pb-4' text='Debido a que el software de reconocimiento facial funciona en base a un algoritmo para la detección, mapeo y contraste de los rasgos faciales, es importante conocer cómo fue entrenado ese algoritmo y cuáles son las tasas de error programadas en el software.' />
             <Col lg={{ span: 10, offset: 1 }}>
               <p>El entrenamiento del algoritmo define la precisión con la cual podrá reconocer rostros en diversos escenarios. Por ejemplo, ante cambios de luz, fondos con distintos colores o ángulos variados, también puede incidir en la certeza del reconocimiento. En esta instancia, aspectos sensibles como el tono de piel y el género de una persona juegan un papel crucial, dado que el software de reconocimiento facial puede discriminarlas, sea por ejemplo si <a href='https://www.perpetuallineup.org/findings/racial-bias'>confunde a una persona con otra por tener rasgos “parecidos” sólo por su tez</a>, o <a href='https://www.pewresearch.org/internet/2019/09/05/the-challenges-of-using-machine-learning-to-identify-gender-in-images/'>incluso estigmatizando las identidades binarias y no binarias</a>.</p>

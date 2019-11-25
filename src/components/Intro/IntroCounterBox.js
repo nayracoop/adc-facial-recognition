@@ -5,10 +5,10 @@ import VisibilitySensor from 'react-visibility-sensor'
 
 const IntroCounterBox = (props) => {
   return (
-    <VisibilitySensor partialVisibility={true}>
-      {({isVisible}) => 
-        <div class={ 'IntroCounterBox ' + props.className }>
-          {(isVisible && <Counter max={props.max} units="%" delay={Math.random()*100} />) || <span class="Counter">0%</span>}
+    <VisibilitySensor partialVisibility>
+      {({isVisible}) =>
+        <div className={'IntroCounterBox ' + props.className}>
+          {(isVisible && <Counter max={props.max} units='%' delay={Math.random() * 100} />) || <span className='Counter'>0%</span>}
           <span>Coincidencia</span>
         </div>
       }

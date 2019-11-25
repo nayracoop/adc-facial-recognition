@@ -15,10 +15,10 @@
     }
     p {
         font-size: 1.75em;
-        line-height: 2.125rem;
+        line-height: 38px;
         @media all and (max-width: 991px){
             font-size: 1em;
-            line-height: 1.375rem;
+            line-height: 22px;
         }
     }
     .img-wrapper-cont{
@@ -37,6 +37,7 @@
                     flex-wrap: wrap;
                     a {
                         margin: 0 7.5px;
+                        width: 40px;
                     }
                 }
             }
@@ -49,7 +50,6 @@
             padding-bottom: 3.75em;
             a {
                 color: #FFF;
-                text-decoration: underline;
             }
             h3 {
                 font-size: 1.125em;
@@ -66,6 +66,7 @@
                     flex-wrap: wrap;
                     a {
                         margin: 0 15px;
+                        width: 43px;
                         @media all and (max-width: 991px){
                             margin: 0 8.5px;
                         }

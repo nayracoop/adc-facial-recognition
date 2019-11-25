@@ -3,11 +3,8 @@
     background-color: #fac716;
     background-position: center -2px;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 2700px 1000px;
     padding-bottom: 0;
-    @media (max-width: 991px) {
-        background-size: 2000px;
-    }
 
     h2 {
         text-align: center;
@@ -41,6 +38,7 @@
             line-height: 26px;
             @media (max-width: 991px) {
                 font-size: 1em;
+                line-height: 22px;
             }
         }
         
