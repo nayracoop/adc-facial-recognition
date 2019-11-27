@@ -14,6 +14,7 @@ class Header extends React.Component {
       scrolledUp: false,
       opened: false
     }
+    this.header = React.createRef();
   }
 
   componentDidMount () {
@@ -49,6 +50,22 @@ class Header extends React.Component {
     document.querySelector('.header-container').classList.toggle('hidden')
   }
 
+  scrollAnchors = (e) => {
+    if(window.scrollBy) { 
+      const distanceToTop = el => Math.floor(el.getBoundingClientRect().top);
+      e.preventDefault();
+
+      let targetID = '#' + (e.target.getAttribute('href')).split('#')[1];
+      const targetAnchor = document.querySelector(targetID);
+      if (!targetAnchor) return;
+
+      let originalTop = distanceToTop(targetAnchor);
+      if(window.innerWidth > 991) originalTop -= this.header.current.offsetHeight;
+      else originalTop -= (originalTop > 0) ? 32 : 96;
+      window.scrollBy({ top: originalTop, left: 0, behavior: 'smooth' });
+    }
+  }
+
   /* handleClick () {
     console.log('The link was clicked.')
     document.querySelector('.header-container').classList.toggle('hidden')
@@ -62,7 +79,7 @@ class Header extends React.Component {
       <Container fluid className={classes + ' header-container'}>
         <Row>
           <Col lg={{ span: 10, offset: 1 }}>
-            <header>
+            <header ref={this.header}>
               <Navbar expand='lg' onToggle={this.openHeader} collapseOnSelect>
                 <Navbar.Brand href='#'>
                   <span className='sr-only'>ADC por los derechos civiles</span>
@@ -71,9 +88,9 @@ class Header extends React.Component {
                 <Navbar.Toggle aria-controls='basic-navbar-nav' className='ml-auto' />
                 <Navbar.Collapse id='basic-navbar-nav'>
                   <Nav className='ml-auto'>
-                    <Nav.Link onClick={this.hideNav} href='#working'>¿cómo funciona?</Nav.Link>
-                    <Nav.Link onClick={this.hideNav} href='#risks'>riesgos</Nav.Link>
-                    <Nav.Link onClick={this.hideNav} href='#about-adc'>¿qué está haciendo la ADC?</Nav.Link>
+                    <Nav.Link onClick={this.scrollAnchors} href='#working'>¿cómo funciona?</Nav.Link>
+                    <Nav.Link onClick={this.scrollAnchors} href='#risks'>riesgos</Nav.Link>
+                    <Nav.Link onClick={this.scrollAnchors} href='#about-adc'>¿qué está haciendo la ADC?</Nav.Link>
                   </Nav>
                   <div className='header-cam-cont mob-only'>
                     <img src={Cam} height='67' alt='Cam' className='header-cam' />
