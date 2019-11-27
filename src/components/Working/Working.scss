@@ -241,18 +241,18 @@ p {
                     margin-bottom: 0!important;
                 }
 
-                transition: transform 0ms ease-in-out, opacity 0ms ease-in-out, left 0s ease-in-out, right 0s ease-in-out;
+                transition: transform 0ms ease-out, opacity 0ms ease-in-out, left 0s ease-in-out, right 0s ease-in-out;
                 transition-delay: 0s;
                 &:nth-child(even) {
-                    transition-duration: 400ms, 300ms, 1s, 1s;
+                    transition-duration: 500ms, 300ms, 1.1s, 1.1s;
                     transition-delay: 200ms;
-                    transform: translateX(-300px);
+                    transform: translateX(-200px);
                     left: 50px;
                 }
                 &:nth-child(odd) {
-                    transition-duration: 400ms, 300ms, 1s, 1s;
+                    transition-duration: 500ms, 300ms, 1.1s, 1.1s;
                     transition-delay: 200ms;
-                    transform: translateX(300px);
+                    transform: translateX(200px);
                     right: 50px;
                 }
                 opacity: 0;

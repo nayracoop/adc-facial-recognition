@@ -81,3 +81,29 @@ h3 {
   }
 }
 
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+    filter: brightness(2) contrast(2);
+  }
+  10% {
+    opacity: 0;
+    transform: scale(0.9);
+    filter: brightness(2) contrast(2);
+  }
+  
+  90% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+    filter: contrast(1);
+  }
+}
+
+.fadeIn {
+  animation: fade-in 500ms ease-in-out;
+}
