@@ -3,8 +3,8 @@ import VisibilitySensor from 'react-visibility-sensor'
 
 const CardWithImage = (props) => {
   return (
-    <VisibilitySensor partialVisibility={true}>
-      {({isVisible}) => 
+    <VisibilitySensor partialVisibility>
+      {({isVisible}) =>
         <div className={'card mb-4 w-100 ' + props.align + (isVisible ? ' in' : '')}>
           <div className='row no-gutters'>
             <div className='col mob-step-cont mob-only'>
@@ -17,7 +17,7 @@ const CardWithImage = (props) => {
                 <img src={props.image} height={props.imgHeight} className='card-img' alt={props.imgAlt} />
               </div>
             </div>
-            <div className='col-lg-6 offset-lg-1'>
+            <div className='col-lg-7'>
               <div className='card-body'>
                 <span className='d-flex mb-4 step desk-step desk-only'>{props.step}</span>
                 <p className='card-text'>{props.text}</p>

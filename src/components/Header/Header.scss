@@ -1,8 +1,21 @@
 .header-container {
     background: #242424;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    transition: transform 400ms ease-in-out;
+    padding: 0;
     @media (max-width: 991px) {
         max-height: 100vh;
         overflow: hidden;
+        &.hidden {
+            transform: translateY(-100px);
+        }
+    }
+    &.hidden {
+        transform: translateY(-164.6px);
     }
     header {
 
@@ -33,15 +46,9 @@
         }
 
         @media (max-width: 991px) {
-            position: fixed;
-            left: 0;
-            right: 0;
             //padding: 0 15px 15px;
             padding: 18px 30px;
-            top: 0;
-            z-index: 100;
             background: #242424;
-            transition: transform 400ms ease-in-out;
 
             &.opened {
                 animation: header 300ms linear;
@@ -60,14 +67,11 @@
                     animation-duration: 600ms;
                 }
             }
-
-            &.hidden {
-                transform: translateY(-100px);
-            }
         }
 
         nav.navbar-light{
-            padding: 2.8rem 0 0 0;
+            //padding: 2.8rem 0 0 0;
+            padding: 2.8rem 0;
             @media (max-width: 991px) {
                 //padding: 2rem 0 0 0;
                 padding: 0;

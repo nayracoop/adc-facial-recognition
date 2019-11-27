@@ -220,7 +220,8 @@ p {
                         padding-top: 55px;
                     }
                     .card-body {
-                        padding: 1.25rem 15px;
+                        //padding: 1.25rem 15px;
+                        padding: 1.25rem 15px 1.25rem 60px;
                         @media all and (max-width: 991px){
                             margin-top: 1em;
                             padding: 1.25em 0;
@@ -234,7 +235,7 @@ p {
                     margin-left: auto;
                 }
                 &.inner-card-img {
-                    max-width: 927px;
+                    //max-width: 927px;
                 }
                 &.inner-card-img:last-of-type {
                     margin-bottom: 0!important;

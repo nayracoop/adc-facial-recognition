@@ -45,15 +45,24 @@ class Header extends React.Component {
     }
   }
 
+  hideNav = () => {
+    document.querySelector('.header-container').classList.toggle('hidden')
+  }
+
+  /* handleClick () {
+    console.log('The link was clicked.')
+    document.querySelector('.header-container').classList.toggle('hidden')
+  } */
+
   render () {
     let classes = this.state.scrolled && !this.state.scrolledUp && !this.state.opened ? 'hidden' : ''
     if (this.state.opened) classes = 'opened'
 
     return (
-      <Container fluid className='header-container'>
+      <Container fluid className={classes + ' header-container'}>
         <Row>
           <Col lg={{ span: 10, offset: 1 }}>
-            <header className={classes}>
+            <header>
               <Navbar expand='lg' onToggle={this.openHeader} collapseOnSelect>
                 <Navbar.Brand href='#'>
                   <span className='sr-only'>ADC por los derechos civiles</span>
@@ -62,9 +71,9 @@ class Header extends React.Component {
                 <Navbar.Toggle aria-controls='basic-navbar-nav' className='ml-auto' />
                 <Navbar.Collapse id='basic-navbar-nav'>
                   <Nav className='ml-auto'>
-                    <Nav.Link href='#working'>¿cómo funciona?</Nav.Link>
-                    <Nav.Link href='#risks'>riesgos</Nav.Link>
-                    <Nav.Link href='#about-adc'>¿qué está haciendo la ADC?</Nav.Link>
+                    <Nav.Link onClick={this.hideNav} href='#working'>¿cómo funciona?</Nav.Link>
+                    <Nav.Link onClick={this.hideNav} href='#risks'>riesgos</Nav.Link>
+                    <Nav.Link onClick={this.hideNav} href='#about-adc'>¿qué está haciendo la ADC?</Nav.Link>
                   </Nav>
                   <div className='header-cam-cont mob-only'>
                     <img src={Cam} height='67' alt='Cam' className='header-cam' />
