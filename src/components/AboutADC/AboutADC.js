@@ -9,7 +9,7 @@ const AboutADC = (props) => {
         <Container>
           <Row className='img-wrapper justify-content-center'>
             <Col lg={11} className='text-center'>
-              <img src={require('../../assets/img/about-adc.jpg')} alt='' className='mb-4 w-100' />
+              <img src={require('../../assets/img/about-adc.jpg')} alt='no es protección es control, con mi cara no' className='mb-4 w-100' />
             </Col>
             <Col lg={12} className='adc-share text-center' >
               <h3 className='mb-3'>Compartir</h3>
