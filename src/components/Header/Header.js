@@ -14,7 +14,7 @@ class Header extends React.Component {
       scrolledUp: false,
       opened: false
     }
-    this.header = React.createRef();
+    this.header = React.createRef()
   }
 
   componentDidMount () {
@@ -51,18 +51,18 @@ class Header extends React.Component {
   }
 
   scrollAnchors = (e) => {
-    if(window.scrollBy) { 
-      const distanceToTop = el => Math.floor(el.getBoundingClientRect().top);
-      e.preventDefault();
+    if (window.scrollBy) {
+      const distanceToTop = el => Math.floor(el.getBoundingClientRect().top)
+      e.preventDefault()
 
-      let targetID = '#' + (e.target.getAttribute('href')).split('#')[1];
-      const targetAnchor = document.querySelector(targetID);
-      if (!targetAnchor) return;
+      let targetID = '#' + (e.target.getAttribute('href')).split('#')[1]
+      const targetAnchor = document.querySelector(targetID)
+      if (!targetAnchor) return
 
-      let originalTop = distanceToTop(targetAnchor);
-      if(window.innerWidth > 991) originalTop -= this.header.current.offsetHeight;
-      else originalTop -= (originalTop > 0) ? 32 : 96;
-      window.scrollBy({ top: originalTop, left: 0, behavior: 'smooth' });
+      let originalTop = distanceToTop(targetAnchor)
+      if (window.innerWidth > 991) originalTop -= this.header.current.offsetHeight
+      else originalTop -= (originalTop > 0) ? 32 : 96
+      window.scrollBy({ top: originalTop, left: 0, behavior: 'smooth' })
     }
   }
 

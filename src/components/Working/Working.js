@@ -31,7 +31,7 @@ const Working = (props) => {
 
           <Row className='mb-5'>
             <Col lg={{ span: 10, offset: 1 }}>
-              <p>Los datos biométricos cambian sustancialmente la relación entre cuerpo e identidad, ya que transforman a las características del cuerpo humano para ser medibles y legibles por computadoras.</p>
+              <p>Los datos biométricos son datos personales sensibles y se dividen en dos grandes categorías. Por un lado, los que provienen de las características físicas y fisiológicas: las huellas dactilares, los rasgos faciales, el ADN, el iris, la retina, la forma de una parte del cuerpo como la mano o la oreja, e incluso el mapa de nuestras venas. Por otra parte, los que provienen de características del comportamiento, como son la voz, la firma, el modo de andar o la manera de escribir en un teclado.</p>
             </Col>
           </Row>
 
@@ -45,9 +45,6 @@ const Working = (props) => {
               mobImage={'algoritmo-mob.svg'}
               mobImgAlt='Algoritmo'
               mobImgClass='mob-only w-100' />
-            <Col lg={{ span: 10, offset: 1 }}>
-              <p>Los datos biométricos son datos personales sensibles y se dividen en dos grandes categorías. Por un lado, los que provienen de las características físicas y fisiológicas: las huellas dactilares, los rasgos faciales, el ADN, el iris, la retina, la forma de una parte del cuerpo como la mano o la oreja, e incluso el mapa de nuestras venas. Por otra parte, los que provienen de características del comportamiento, como son la voz, la firma, el modo de andar o la manera de escribir en un teclado.</p>
-            </Col>
           </Row>
         </Container>
       </div>

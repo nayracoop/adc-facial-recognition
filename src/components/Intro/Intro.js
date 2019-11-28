@@ -1,6 +1,6 @@
 import React from 'react'
 import './Intro.scss'
-//import Cam from '../../assets/img/cam.svg'
+// import Cam from '../../assets/img/cam.svg'
 import { Container, Row, Col, Jumbotron } from 'react-bootstrap'
 import Cam360 from './IntroCamera360'
 import CounterBox from './IntroCounterBox'
@@ -14,9 +14,9 @@ const Intro = () => {
             <h1>ConMiCaraNo</h1>
             <p>Reconocimiento facial en la <br />Ciudad de Buenos Aires</p>
           </Col>
-        </Row>  
+        </Row>
       </Container>
-      <CounterBox max="89" className="cb-1 cb-desk desk-only" />
+      <CounterBox max='89' className='cb-1 cb-desk desk-only' />
       <Cam360 className='mob-only' />
     </Jumbotron>
   )
