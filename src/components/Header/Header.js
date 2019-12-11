@@ -73,10 +73,11 @@ class Header extends React.Component {
 
   render () {
     let classes = this.state.scrolled && !this.state.scrolledUp && !this.state.opened ? 'hidden' : ''
+    let scrolling = this.state.scrolled ? ' scrolling' : ''
     if (this.state.opened) classes = 'opened'
 
     return (
-      <Container fluid className={classes + ' header-container'}>
+      <Container fluid className={classes + scrolling + ' header-container'}>
         <Row>
           <Col lg={{ span: 10, offset: 1 }}>
             <header ref={this.header}>
