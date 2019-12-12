@@ -14,10 +14,10 @@
             transform: translateY(-100px);
         }
     }
-    &.hidden {
-        transform: translateY(0);
-    }
     @media (min-width: 992px) {
+        &.hidden {
+            transform: translateY(0);
+        }
         &.scrolling {
             header {
                 nav.navbar-light {
@@ -59,7 +59,6 @@
         }
 
         @media (max-width: 991px) {
-            //padding: 0 15px 15px;
             padding: 18px 30px;
             background: #242424;
 
@@ -85,10 +84,9 @@
         nav.navbar-light {
             transition: padding 200ms ease-in-out;
             padding: 2.8rem 0;
-            //padding: 2.8rem 0 0 0;
             @media (max-width: 991px) {
                 padding: 0;
-                //padding: 2rem 0 0 0;
+                justify-content: center;
             }
             .navbar-brand {            
                 padding: 0;  
@@ -132,15 +130,11 @@
                     }
                     &:hover,
                     &:active {
-                        // border-bottom: 2px solid #FFF;
                         &::after {
                             transition-duration: 200ms;
                             width: 100%;
                         }
                     }
-                    /*&:last-of-type {
-                        margin-right: 0;
-                    }*/
                     @media (max-width: 991px) {
                         font-size: .8125rem;
                         margin-bottom: 1.2rem;
@@ -210,14 +204,7 @@
             .navbar-collapse {
                 
                 .header-cam-cont {
-                   /* position: absolute;
-                    height: 50vh;
-                    width: 100vw;
-                    background: blue;
-                    top: 0;
-                    left: -15px;*/
                     position: absolute;
-                    //height: 68vh;
                     width: 200vw;
                     background: linear-gradient(180deg, rgba(0,109,141,1) 35%, rgba(0,179,238,1) 100%);
                     top: -500px;
@@ -230,10 +217,6 @@
                     justify-content: center;
                     transform-origin: bottom center;
                     transform: rotate(180deg);
-                    /*transition: all 1s;
-                    transition-delay: 2s;
-                    transition-duration: 1s;*/
-
                     animation: fadeIn 400ms ease-out;
 
                     @media all and (max-height: 600px) and (orientation: landscape) {
@@ -253,8 +236,6 @@
                             bottom: -1px;
                             right: 0;
                             border-top: none;
-                            /*border-bottom: 165px solid #242424;
-                            border-left: 50vw solid transparent;*/
                             border-bottom: 20vw solid #242424!important;
                             border-left: 100vw solid transparent;
                             z-index: 1;
@@ -276,7 +257,6 @@
                         z-index: 2;
                     }
                     .light {
-                        //display: none;
                         background: linear-gradient(180deg, #00b1eb 8.76%, #242424 100%);
                         position: absolute;
                         right: 0;
@@ -286,29 +266,6 @@
                         height: 50vh; 
                         width: 100vw;
                             &::before {
-                               /* content: '';
-                                width: 0;   
-                                height: 0;  
-                                border-top: 25vh solid #242424;    
-                                border-left: 50vw solid transparent;    
-                                right: 0;   
-                                position: absolute; 
-                                bottom: -1vh;   
-                                width: 50%; 
-                                height: 55vh;   
-                                z-index: 1;    
-                                top: 65px;
-
-                                content: '';
-                                border-bottom: 50vh solid #242424 ;
-                                border-right: 50vw solid transparent;
-                                left: 0;
-                                position: absolute;
-                                width: 50%;
-                                z-index: 1;
-                                top: 0;
-                                height: 50vh;*/
-                                
                                 content: '';
                                 border-bottom: 90vh solid  #242424;
                                 border-right: 100vw solid transparent;
@@ -331,16 +288,6 @@
                                 top: 0;
                                 height: 31vh;
                                 transform: rotate(27deg);
-                                /*
-                                content: '';
-                                border-bottom: 50vh solid #242424 ;
-                                border-left: 50vw solid transparent;
-                                right: 0;
-                                position: absolute;
-                                width: 50%;
-                                z-index: 1;
-                                top: 0;
-                                height: 50vh;*/
                             }
                         }
                         
@@ -353,8 +300,6 @@
                             bottom: -1px;
                             right: 0;
                             border-top: none;
-                            /*border-bottom: 165px solid #242424;
-                            border-left: 50vw solid transparent;*/
                             border-bottom: 75vw solid #242424;
                             border-left: 100vw solid transparent;
                             z-index: 1;
@@ -384,6 +329,10 @@
                         a {
                             width: 39px;
                             margin: 0 10px;
+                            @media (max-width: 360px) {
+                                width: 20px;
+                                margin: 0 15px;
+                            }
                         }
                     }
                     @media all and (max-height: 600px) and (orientation: landscape) {

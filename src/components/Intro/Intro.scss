@@ -1,11 +1,5 @@
 .intro {
     background-color: #242424;
-    /*background-image: url('../../assets/img/intro-bg-1.svg'),
-    url('../../assets/img/intro-bg-2.svg');
-    background-repeat: no-repeat;
-    background-position: 100% 0, 0 0;
-    background-size: 100%, auto;
-    height: 1294px;*/
     padding-top: 0;
     margin-top: 165px;
     margin-bottom: -300px;
@@ -27,8 +21,6 @@
         background-image: none;
         padding-top: 0;
         margin-top: 0px;
-        /*height: unset;
-        margin-bottom: 0;*/
     &::before {
         content: none;
     }

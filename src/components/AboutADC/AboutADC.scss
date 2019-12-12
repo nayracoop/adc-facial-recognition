@@ -49,7 +49,7 @@
             padding-top: 3.75em;
             padding-bottom: 3.75em;
             a {
-                color: #FFF;
+                color: #242b36;
             }
             h3 {
                 font-size: 1.125em;
@@ -70,9 +70,46 @@
                         @media all and (max-width: 991px){
                             margin: 0 8.5px;
                         }
+                        @media (max-width: 360px) {
+                            width: 35px;
+                            margin: 0 5px;
+                            img {
+                                width: 100%;
+                            }
+                        }
                     }
                     img {
                         height: 43px;
+                    }
+                }
+            }
+            .reports-heading {
+                p {
+                    margin-bottom: 50px;
+                }
+            }
+            .report {
+                @media all and (max-width: 991px){
+                    margin-bottom: 50px;                    
+                }
+                    
+                a {
+                    h4 {
+                        font-size: 1.25rem;
+                        font-weight: 600;
+                        color: #FFF;
+                        margin-top: 20px;
+                        margin-bottom: 4px;
+                    }
+                    p {
+                        font-size: 1rem;
+                        line-height: 22px;
+                    }
+                    img {
+                        border-radius: 5px;
+                    }
+                    &:hover {
+                        color: #FFF;
                     }
                 }
             }

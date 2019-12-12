@@ -50,6 +50,11 @@ p {
                 }
             }
             .working-desc {
+                @media all and (max-width: 335px) {
+                    h2 {
+                        font-size: 1.65rem;
+                    }
+                }
                 h2, h3 {
                     text-align: center;
                 }
@@ -57,7 +62,6 @@ p {
             .mob-nodes.mob-only {
                 margin-left: -45%;
                 width: unset!important;
-                //min-width: 200px;
                 max-width: 300px;
                 margin-bottom: 0!important;
             }
@@ -86,11 +90,6 @@ p {
                 position: absolute;
                 left: 0;
                 width: 100%;
-                /*
-                bottom: -250px;
-                height: 500px;
-                clip-path: polygon(0% 0%, 100% 50px, 100% 50%, 0% calc(100% - 150px));
-                */
                 background: #242424;
                 z-index: -1;
                 border-left: 99vw solid #242424;
@@ -221,7 +220,6 @@ p {
                         padding-top: 55px;
                     }
                     .card-body {
-                        //padding: 1.25rem 15px;
                         padding: 1.25rem 15px 1.25rem 60px;
                         @media all and (max-width: 991px){
                             margin-top: 1em;
@@ -234,9 +232,6 @@ p {
                 }
                 &.right {
                     margin-left: auto;
-                }
-                &.inner-card-img {
-                    //max-width: 927px;
                 }
                 &.inner-card-img:last-of-type {
                     margin-bottom: 0!important;
@@ -285,6 +280,7 @@ p {
         @media all and (max-width: 991px){
             h3 {
                 text-align: center;
+                line-height: 1.23;
             }
             .verification {
                 text-align: center;
@@ -315,6 +311,9 @@ p {
         }
     }
     .algorithm-training {
+        h3 {
+            line-height: 1.23;
+        }
         p {
             line-height: 28px;
             @media all and (max-width: 991px){
