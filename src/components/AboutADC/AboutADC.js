@@ -4,7 +4,7 @@ import {Container, Row, Col} from 'react-bootstrap'
 
 const AboutADC = (props) => {
   return (
-    <section id='about-adc'>
+    <section id='about'>
       <div className='img-wrapper-cont'>
         <Container>
           <Row className='img-wrapper justify-content-center'>
@@ -20,7 +20,7 @@ const AboutADC = (props) => {
           </Row>
         </Container>
       </div>
-      <div className='desc-wrapper-cont'>
+      <div id='about-adc' className='desc-wrapper-cont'>
         <Container>
           <Row className='desc-wrapper justify-content-center'>
             <Col lg={11} className='text-center'>
