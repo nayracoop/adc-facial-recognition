@@ -8,7 +8,9 @@ const Footer = () => {
       <Container>
         <Row className='main-footer'>
           <Col lg={2} className='footer-logo-cont'>
-            <img src={require('../../assets/img/logo-footer.svg')} height='64' alt='ADC por los derechos civiles' />
+            <a href='https://adc.org.ar/' target='_blank' rel='noopener noreferrer'>
+              <img src={require('../../assets/img/logo-footer.svg')} height='64' alt='ADC por los derechos civiles' />
+            </a>
           </Col>
           <Col xs={12} lg={{ span: 6, offset: 4 }} className='info-cont'>
             <ul>
