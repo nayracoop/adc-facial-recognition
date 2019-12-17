@@ -15,7 +15,7 @@ const Footer = () => {
           <Col xs={12} lg={{ span: 6, offset: 4 }} className='info-cont'>
             <ul>
               <li>Tucumán 924 8° (C1049AAT) Ciudad Autónoma de Buenos Aires - Argentina</li>
-              <li>Teléfono: <a href='tel:+541152360555'>(54 11) 5236-0555</a> | <a href='mailto:contacto@adc.org.ar'>contacto@adc.org.ar</a></li>
+              <li>Teléfono: <a href='tel:+541152360555'>(54 11) 5236-0555</a> | <a href='mailto:adc@adc.org.ar'>adc@adc.org.ar</a></li>
             </ul>
           </Col>
         </Row>
