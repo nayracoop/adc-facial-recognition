@@ -15,10 +15,7 @@ Clonar repo y correr
 
  :zap: Entrar a http://localhost:3000/
 
-
-## License
-[GPL-3.0] GNU General Public License v3.0
-
-<img src="https://img.shields.io/badge/licence-GPL--3-brightgreen" alt="licence GNU General Public License v3.0">
+## Licencia
+<img src="https://img.shields.io/badge/licence-GPL--3-brightgreen" alt="licence GNU General Public License v3.0">   GNU General Public License v3.0
 
 :point_right: This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
