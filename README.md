@@ -2,7 +2,7 @@
 
 Sitio web de ADC sobre reconocmiento facial en la Ciudad de Buenos Aires desarrollado en React.js. 
 
-:sparkles: El sitio se encuentra disponible en **https://conmicarano.adc.org.ar/** :sparkles: 
+:point_right: El sitio se encuentra disponible en **https://conmicarano.adc.org.ar/** :point_left: 
 
 ## Instalación
 
