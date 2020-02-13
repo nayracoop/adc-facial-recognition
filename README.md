@@ -1,6 +1,6 @@
 # ADC reconocimiento facial  
 
-Sitio web de ADC sobre reconocmiento facial en la Ciudad de Buenos Aires desarrollado en React.js. 
+Sitio web de Asociación por los Derechos Civiles sobre el uso del reconocmiento facial en la Ciudad de Buenos Aires, desarrollado en React.js. 
 
 :point_right: El sitio se encuentra disponible en **https://conmicarano.adc.org.ar/** :point_left: 
 
