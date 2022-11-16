@@ -1,0 +1,47 @@
+#mobileZoneMenu{
+
+  .mobileZoneMenuBox{
+    position: absolute;
+    width: 0;
+    overflow: hidden;
+  }
+
+  @media (max-width: 991px) {
+    .mobileZoneMenuBox {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: #212529;
+      z-index: 999;
+      padding: 0;
+      margin: 0;
+      transition: 1s all;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      // justify-content: center;
+      overflow: hidden;
+      
+      button {
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        right: 5%;
+        margin-top: 25px;
+        z-index: 999;
+      }
+    
+      ::hover {
+        cursor: pointer;
+      }
+    }
+    
+    .open {
+      width: 0;
+    }
+  }
+
+}
+

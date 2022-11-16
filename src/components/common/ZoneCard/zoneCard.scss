@@ -1,0 +1,78 @@
+#zoneCard {
+  background-color: #212529;
+  width: 457.5px;
+  height: 740px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 46px 0;
+
+  .imgBox {
+    // background-color: blue;
+    width: 87%;
+    height: 95px;
+    margin-bottom: 1rem;
+
+    .svgBox {
+      width: 35%;
+    }
+  }
+
+  .contentBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 87%;
+    text-align: left;
+    // background-color: red;
+
+    h2 {
+      font-size: 2em;
+      text-align: left;
+      line-height: 38px;
+      margin-bottom: 1rem;
+      padding-bottom: 1em;
+    }
+
+    p {
+      text-align: left;
+      font-size: 1.25em;
+      line-height: 28px;
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+  }
+
+  @media (max-width: 991px) {
+    width: 100vw;
+    height: 740px;
+    border-radius: 0;
+    padding: 0;
+    margin-top: 45px;
+
+
+    .imgBox{
+      // background-color: red;
+      height: 75px;
+      img{
+        object-fit: cover;
+        height: 75px;
+      }
+    }
+
+    .contentBox {
+      font-size: 0.9em;
+      margin-bottom: 0.5em;
+
+      h2{
+        margin-bottom: 0.5em;
+        padding-bottom: 0;
+        font-size: 1.55em;
+      }
+      p{
+        font-size: 1.1em;
+      }
+    }
+  }
+}

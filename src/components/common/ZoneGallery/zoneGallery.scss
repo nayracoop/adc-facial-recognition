@@ -1,0 +1,38 @@
+#zoneGallery {
+  // background-color: black;
+  // padding-bottom: 2rem;
+  width: 457.5px;
+  height: 700px;
+  position: relative;
+
+  .swiper-container {
+
+    padding-bottom: 3rem;
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      position: absolute;
+      color: #ffffff;
+      height: 1.5rem;
+      // background-color: black;
+      top: 99%;
+
+      &::after {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+    }
+
+    .swiper-pagination {
+      .swiper-pagination-bullet {
+        width: 0.7rem;
+        height: 0.7rem;
+        --swiper-theme-color: #ffffff;
+      }
+    }
+  }
+
+  @media (max-width: 991px){
+    display: none;
+  }
+}

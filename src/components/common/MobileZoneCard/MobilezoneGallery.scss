@@ -1,0 +1,44 @@
+#MobilezoneGallery {
+  .MobileZoneGalleryClass {
+    width: 457.5px;
+    height: 700px;
+
+    .swiper-container {
+
+      //   padding-bottom: 3rem;
+
+      .swiper-button-prev,
+      .swiper-button-next {
+        position: absolute;
+        color: #ffffff;
+        height: 1.5rem;
+        // background-color: black;
+        top: 80%;
+
+        &::after {
+          font-size: 1.5rem;
+          font-weight: bold;
+        }
+      }
+
+      //   .swiper-pagination {
+      //     .swiper-pagination-bullet {
+      //       width: 0.7rem;
+      //       height: 0.7rem;
+      //       --swiper-theme-color: #ffffff;
+      //     }
+      //   }
+    }
+
+    @media (max-width: 991px) {
+      width: 100vw;
+      height: 100vh;
+    }
+
+  }
+
+  .open {
+    width: 0;
+  }
+}
+
